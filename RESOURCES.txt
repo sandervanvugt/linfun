@@ -1,0 +1,11 @@
+FURTHER LEARNING
+Live courses
+Bash Scripting in 4 hours: https://learning.oreilly.com/live-events/bash-shell-scripting-in-4-hours/0636920245810/
+RHCSA crash course: https://learning.oreilly.com/live-events/red-hat-certified-system-administrator-rhcsa-rhel-9-crash-course/0636920077845/
+Linux Certification labs workshop: https://learning.oreilly.com/live-events/linux-certification-labs-workshop/0636920096425/0790145059346/
+
+Recorded courses
+Linux Fundamentals: https://learning.oreilly.com/course/linux-fundamentals-2nd/9780137929313/
+RHCSA: https://learning.oreilly.com/course/red-hat-certified/9780137931521/
+LFCS: https://learning.oreilly.com/course/linux-foundation-certified/9780138230678/
+Linux+: https://learning.oreilly.com/course/comptia-linux-xk0-005/9780137903726/
