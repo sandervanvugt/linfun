@@ -1,0 +1,119 @@
+echo $SHELL
+    4  sudo -i
+    5  sudo useradd -m lisa
+    6  sudo passwd lisa
+    7  su - lisa
+    8  history
+    9  sudo journalctl
+   10  ls -l /var/log
+   11  ps fax
+   12  ps faux
+   13  less /etc/sudoers
+   14  sudo less /etc/sudoers
+   15  history
+   16  less /etc/passwd
+   17  ps aux | less
+   18  vim countdown
+   19  chmod +x countdown 
+   20  ./countdown 13
+   21  vim countdown
+   22  ./countdown 13
+   23  ssh student@192.168.29.157
+   24  sudo yum install openssh-server
+   25  cat countdown 
+   26  vim countdown
+   27  chown -x countdown
+   28  chmod -x countdown
+   29  ls
+   30  ls -l countdown 
+   31  ./countdown
+   32  chmod +x countdown 
+   33  ls -l countdown 
+   34  ./countdown 1
+   35  history
+   36  countdown 1
+   37  echo $PATH
+   38  cp countdown /usr/local/bin/
+   39  sudo cp countdown /usr/local/bin/
+   40  countdown 1
+   41  history
+   42  cat countdown 
+   43  LS
+   44  ls
+   45  cat --help
+   46  cat -u -e -n /etc/os-release 
+   47  cat -help
+   48  cat --help
+   49  whoami
+   50  hostname
+   51  date
+   52  date +%d-%m-%Y
+   53  man date
+   54  touch hello
+   55  ls -l hello
+   56  cd /bin
+   57  touch hello
+   58  pwd
+   59  cd
+   60  pwd
+   61  ls -l hello
+   62  touch hello
+   63  ls -l hello
+   64  ls --help | less
+   65  ls -l
+   66  cd /home
+   67  ls
+   68  cd /usr/local/bin
+   69  pwd
+   70  ls
+   71  cd -
+   72  cd
+   73  pwd
+   74  ls --help
+   75  ls --help | less
+   76  ls -l
+   77  ll
+   78  alias
+   79  cd .
+   80  cd /usr/local/bin
+   81  cd .
+   82  cd -
+   83  which ll
+   84  which ls
+   85  countdown 12
+   86  man mount
+   87  man man
+   88  man os-release
+   89  man mount
+   90  man -k password
+   91  man -k password | wc -l
+   92  man -k password
+   93  man -k password | grep 1
+   94  man -k password | grep 8
+   95  man -k password | grep passwd
+   96  man passwd
+   97  man useradd
+   98  cd
+   99  man -k sander
+  100  man man
+  101  man apropos 
+  102  man mandb
+  103  sudo mandb
+  104  man ls
+  105  pinfo '(coreutils) ls invocation'
+  106  history
+  107  man -k hostname
+  108  man hostnamectl
+  109  hostnamectl whatever.example.com
+  110  hostnamectl --help
+  111  hostnamectl hostname whatever.example.com
+  112  exit
+  113  lvcreate --help | less
+  114  dnf install git
+  115  sudo dnf install git
+  116  git clone https://github.com/sandervanvugt/linfun
+  117  cd linfun/
+  118  ls
+  119  less RESOURCES.txt 
+  120  history
+
