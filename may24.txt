@@ -1,4 +1,6 @@
-echo $SHELL
+    1  whoami
+    2  chsh
+    3  echo $SHELL
     4  sudo -i
     5  sudo useradd -m lisa
     6  sudo passwd lisa
@@ -108,12 +110,370 @@ echo $SHELL
   110  hostnamectl --help
   111  hostnamectl hostname whatever.example.com
   112  exit
-  113  lvcreate --help | less
-  114  dnf install git
-  115  sudo dnf install git
-  116  git clone https://github.com/sandervanvugt/linfun
-  117  cd linfun/
-  118  ls
-  119  less RESOURCES.txt 
-  120  history
-
+  113  countdown 3
+  114  countdown 1
+  115  echo $SHELL
+  116  history
+  117  exit
+  118  lvcreate --help | less
+  119  dnf install git
+  120  sudo dnf install git
+  121  git clone https://github.com/sandervanvugt/linfun
+  122  cd linfun/
+  123  ls
+  124  less RESOURCES.txt 
+  125  history
+  126  git pull
+  127  cat may24.txt 
+  128  cat countdown 
+  129  file /etc/passwd
+  130  file /dev/sda
+  131  pwd
+  132  ls
+  133  ls -a
+  134  cd ..
+  135  ls
+  136  ls -a
+  137  ls -l
+  138  ls -la
+  139  ls linfun/
+  140  ls -ld linfun/
+  141  ls -l linfun/
+  142  cd /etc
+  143  ls a*
+  144  ls -d a*
+  145  ls -lrt
+  146  ls aa*
+  147  ls a*
+  148  ls -d a*
+  149  ls -d a????*
+  150  ls -d [ae]*
+  151  mkdir hello
+  152  cd
+  153  mkdir hello
+  154  mkdir hellodir
+  155  rmdir hellodir/
+  156  cd /etc
+  157  ls
+  158  cd /usr
+  159  ls
+  160  cd local/
+  161  ls
+  162  man hier
+  163  cd /var
+  164  ls
+  165  cd log
+  166  pwd
+  167  ls -lrt
+  168  tail /var/log/messages
+  169  sudo tail /var/log/messages
+  170  sudo journalctl
+  171  cd
+  172  cd /var/
+  173  cd /
+  174  ls
+  175  cd home
+  176  cd /home
+  177  cd srv
+  178  ls
+  179  cd /srv
+  180  cd /var/log
+  181  ls ..
+  182  cd ../ftp
+  183  cd /var/ftp
+  184  cd
+  185  history
+  186  cp /etc/hosts .
+  187  ls -l /etc/hhosts ./hosts
+  188  ls -l /etc/hosts ./hosts
+  189  mv hosts /tmp
+  190  ls /tmp
+  191  mv /tmp/hosts /sander
+  192  sudo mv /tmp/hosts /sander
+  193  ls -ld /sander 
+  194  sudo rm -f /sander
+  195  sudo cp /etc/hosts /sander/
+  196  cd /
+  197  ls
+  198  ls -l
+  199  ls bin
+  200  ls
+  201  file /bin
+  202  file /bin/znew 
+  203  cd
+  204  ls
+  205  cp /etc/hello .
+  206  cp /etc/hosts .
+  207  ln hosts hardhost
+  208  ls *hosts
+  209  ls -l
+  210  ls -l *host*
+  211  ls -il *host*
+  212  echo hello >> hosts
+  213  ls -il *host*
+  214  rm hosts
+  215  ls -il *host*
+  216  ln hardhost hosts
+  217  ls -il *host*
+  218  ln -s hosts symhosts
+  219  ls -il *host*
+  220  rm hosts
+  221  ls -il *host*
+  222  cat symhosts 
+  223  cp hosts copyhosts
+  224  ln hardhost hosts
+  225  cp hosts copiedhosts
+  226  ls -il *
+  227  ls -il *host*
+  228  echo copied >> copiedhosts 
+  229  ls -il *host*
+  230  find / -name "hosts"
+  231  find / -name "hosts" 2> /dev/null
+  232  find / -name "hosts" > /dev/null
+  233  find / -name "hosts" 2> /dev/null
+  234  find / -name "*hosts*" 2> /dev/null
+  235  tail /etc/passwd
+  236  sudo find / -user "lisa"
+  237  sudo find / -size +2G 2> /dev/null
+  238  sudo find / -user "lisa"
+  239  sudo find / -user "lisa" -exec ls -l {} \;
+  240  sudo find / -user "lisa" -exec ls -lad {} \;
+  241  sudo find / -user "lisa" 
+  242  sudo find / -user "lisa" | ls -l
+  243  sudo mkdir /root/lisa; sudo find / -user lisa -exec cp {} /root/lisa \;
+  244  sudo ls -la /root/lisa/
+  245  ls ; who
+  246  ls iohiuh ; who
+  247  ls iohiuh && who
+  248  ls iohiuh || who
+  249  ls  || who
+  250  history
+  251  sudo tar cvf etc.tar /etc
+  252  ls -l
+  253  sudo tar czvf etc.tgz /etc
+  254  ls -l etc*
+  255  sudo tar cjvf etc.tar.bz /etc
+  256  ls -l etc*
+  257  tar tvf etc.tgz
+  258  tar xvf etc.tgz 
+  259  ls
+  260  history
+  261  ls
+  262  mv etc.tar.bz etc
+  263  ls -l etc*
+  264  ls -ld etc*
+  265  mv etc.tgz etct
+  266  ls -l etct
+  267  file etct
+  268  tar -cvf etct -C /tmp
+  269  tar -cvf etct -C /tmp .
+  270  sudo tar -cvf etct -C /tmp .
+  271  countdown 15
+  272  cd /tmp
+  273  mkdir files/pictures
+  274  mkdir -p files/pictures
+  275  mkdir -p files/photos files/videos
+  276  tree files
+  277  cp /etc/[a-c]* files/
+  278  tree
+  279  tree files
+  280  mv files/[ab]* files/photos/
+  281  mv files/c* /tmp/files/videos/
+  282  tree files/
+  283  history
+  284  man find
+  285  find /etc -size -1000c
+  286  find /etc -size -1000c -exec cp {} /tmp/files/pictures/ \;
+  287  find /etc -size -1000c -type f
+  288  tree
+  289  tree files/
+  290  cd files/
+  291  ln -s /var .
+  292  ls
+  293  tar czvf ~/homes.tgz /home/
+  294  ls -l ~
+  295  cd /tmp
+  296  mkdir archive
+  297  tar xvf ~/homes.tgz .
+  298  tar xvf ~/homes.tgz 
+  299  history
+  300  vimtutor
+  301  vim myfile
+  302  cat myfile 
+  303  vim myfile
+  304  sudo vim /etc/ssh/sshd_config
+  305  sudo less /var/log/messages
+  306  sudo more /var/log/messages
+  307  head /etc/passwd
+  308  head -5 /etc/passwd
+  309  tail -5 /etc/passwd
+  310  vim numbers
+  311  cat numbers 
+  312  tac numbers 
+  313  ps aux | tail
+  314  ps aux
+  315  ps aux | tail 
+  316  ps aux | tail | head -2
+  317  cd /etc
+  318  grep lisa *
+  319  grep lisa * 2>/dev/null
+  320  grep -l lisa * 2>/dev/null
+  321  grep Lisa * 2>/dev/null
+  322  grep -i Lisa * 2>/dev/null
+  323  grep -i port /etc/ssh/sshd_config
+  324  sjudo grep -i port /etc/ssh/sshd_config
+  325  sudo grep -i port /etc/ssh/sshd_config
+  326  sudo grep -i -A5 port /etc/ssh/sshd_config
+  327  grep -l root *
+  328  grep -l root * 2>/dev/null
+  329  grep -lR root * 2>/dev/null
+  330  ps aux
+  331  ps aux | grep ssh
+  332  ps aux | grep ssh | grep -v grep
+  333  cd
+  334  countdown 12
+  335  cd linfun/
+  336  ls
+  337  vim regex 
+  338  echo hello
+  339  echo $PATH
+  340  echo *
+  341  echo '*'
+  342  grep 'a*' a*
+  343  grep 'l' regex 
+  344  grep '^l' regex 
+  345  grep 'anna$' regex 
+  346  vim regex 
+  347  grep 'anna$' regex 
+  348  grep '^anna' regex 
+  349  grep '^lea\b' regex 
+  350  vim regex 
+  351  grep '^lea\b' regex 
+  352  grep 'lea\b' regex 
+  353  cat regex 
+  354  grep 'k.*n' regex 
+  355  echo kn >> regex 
+  356  grep 'k.*n' regex 
+  357  grep 'k.+n' regex 
+  358  grep -E 'k.+n' regex 
+  359  grep -E 'k.?n' regex 
+  360  echo kippppppppen >> regex 
+  361  grep 'kip\{3\}pen' regex 
+  362  echo kipppen >> regex 
+  363  grep 'kip\{3\}pen' regex 
+  364  grep 'kip\{3\}en' regex 
+  365  grep -E '{ svm ? vmx }' /proc/cpuinfo 
+  366  grep -E '{ svm | vmx }' /proc/cpuinfo 
+  367  less /proc/cpuinfo 
+  368  history
+  369  cat /etc/passwd
+  370  cat /etc/passwd | cut -d : -f 1
+  371  cat /etc/passwd | cut -d : -f 1 | sort
+  372  cat /etc/passwd
+  373  cat /etc/passwd | cut -d : -f 3 | sort
+  374  cat /etc/passwd | cut -d : -f 3 | sort -n
+  375  echo hello | tr [:lower:] [:upper:]
+  376  echo hello | tr a-k l-z
+  377  history
+  378  sed -n 5p /etc/passwd
+  379  sed -i 's/anna/bxxxb/g' regex 
+  380  cat regex 
+  381  sed -i 's/anna/bxxxb/g' regex 
+  382  sed -i -e '2d' regex 
+  383  echo hello 1.txt
+  384  echo hello > {1..9}.txt
+  385  echo hello > 1.txt
+  386  echo hello > 2.txt
+  387  echo hello > blah.txt
+  388  for i in *txt; do echo $i; done
+  389  for i in *txt; do sed -i 's/hello/byebye/g' $i; done
+  390  cat 1.txt 
+  391  awk -F : '{ print $4 }' /etc/passwd
+  392  awk -F : '/lisa/ { print $4 }' /etc/passwd
+  393  awk -F : '$3 > 999 { print $1 }' /etc/passwd
+  394  history
+  395  head -f /etc/passwd | tail -1
+  396  head -5 /etc/passwd | tail -1
+  397  sed -n p5 /etc/passwd
+  398  sed -n 5p /etc/passwd
+  399  ps aux | awk '{ print $1 }'
+  400  grep '^root' /etc/*
+  401  grep -l '^root' /etc/* 2>/dev/null
+  402  grep '...' /etc/passwd
+  403  grep '^...$' /etc
+  404  grep '^...$' /etc/*
+  405  grep '^...$' /etc/* 2>/dev/null
+  406  grep lea regex 
+  407  grep 'lea ' regex 
+  408  grep 'lea\b' regex 
+  409  ls > output
+  410  cat output
+  411  who > output 
+  412  cat output 
+  413  ls >> output
+  414  cat output 
+  415  grep -R root /etc/
+  416  grep -R root /etc/ 2>/dev/null
+  417  grep -R root /etc/ >/dev/null
+  418  grep -R root /etc/ &>/dev/null
+  419  sort < /etc/services 
+  420  sort /etc/services 
+  421  ps aux | tee psfile | grep ssh
+  422  cat psfile 
+  423  history
+  424  less /etc/passwd
+  425  ps aux | grep less
+  426  sudo ls -l /proc/51023/fd
+  427  history
+  428  vim ~/.bash_history 
+  429  exit
+  430  countdown 4
+  431  less /etc/passwd
+  432  history
+  433  exit
+  434  vim .bash_history 
+  435  history -w
+  436  sudo echo password | passwd --stdin
+  437  sudo sh -c "echo password | passwd --stdin lisa"
+  438  history
+  439  history -d 437
+  440  history -w
+  441  countdown 4
+  442  history
+  443  sudo dd if=/dev/zero of=/dev/null &
+  444  sudo -i
+  445  sleep 1000
+  446  jobs
+  447  bg 1
+  448  top
+  449  jobs
+  450  bg 4
+  451  jobs
+  452  fg 1
+  453  jobs
+  454  fg 2
+  455  jobs
+  456  fg 3
+  457  jobs
+  458  sudo yum search nmap
+  459  sudo yum install -y nmap
+  460  sudo useradd anna
+  461  cd /tmp
+  462  echo hello > hellofile
+  463  ls -l hellofile 
+  464  id
+  465  sudo passwd anna
+  466  su - anna
+  467  chmod 640 /tmp/hellofile 
+  468  ls -l /tmp/hellofile 
+  469  su - anna
+  470  history
+  471  cd
+  472  vim helloworld.sh
+  473  ./helloworld.sh
+  474  ls -l helloworld.sh 
+  475  chmod +x helloworld.sh 
+  476  ls -l
+  477  ./helloworld.sh 
+  478  history | grep git
+  479  history
