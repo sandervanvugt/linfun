@@ -1,0 +1,168 @@
+    1  vim countdown
+    2  bash countdown 13
+    3  history
+    4  echo $SHELL
+    5  vim countdown 
+    6  bash countdown
+    7  countdown 1
+    8  ls
+    9  pwd
+   10  echo $PATH
+   11  ./countdown 1
+   12  ls -l countdown
+   13  chmod +x countdown 
+   14  ./countdown 1
+   15  whoami
+   16  ls -l /root
+   17  sudo ls -l /root
+   18  id
+   19  visudo
+   20  sudo visudo
+   21  su -
+   22  sudo su -
+   23  sudo -i
+   24  ./countdown 1
+   25  ls
+   26  export PATH=$PATH:.
+   27  echo $PATH
+   28  countdown 1
+   29  cat .bashrc
+   30  ssh student@192.168.29.139
+   31  cat /etc/os-release 
+   32  ssh-keygen 
+   33  ssh-copy-id 192.168.29.139
+   34  ssh 192.168.29.139
+   35  history
+   36  top
+   37  history
+   38  ip a
+   39  ip a | grep inet
+   40  LS
+   41  ls
+   42  uname --help
+   43  uname -sin
+   44  rpm --help | less
+   45  ls --help | less
+   46  whoami
+   47  hostname
+   48  hostnamectl --help
+   49  hostnamectl hostname centos.example.local
+   50  hostname
+   51  exit
+   52  date
+   53  uname
+   54  uname --help
+   55  uname -r
+   56  passwd
+   57  sudo passwd root
+   58  touch afile
+   59  ls -l afile 
+   60  touch /etc/afile
+   61  last
+   62  sudo vim /etc/hosts
+   63  ip a
+   64  sudo vim /etc/hosts
+   65  ping ubuntu
+   66  history
+   67  ./countdown 1
+   68  history
+   69  dnf install -y git
+   70  sudo dnf install -y git
+   71  man ls
+   72  man passwd
+   73  man -k user
+   74  man -k user | wc -l
+   75  man man
+   76  man -k user 
+   77  man -k user | grep 8
+   78  man -k sander
+   79  man man
+   80  man apropos
+   81  man mandb
+   82  mandb
+   83  sudo mandb
+   84  man ls
+   85  pinfo '(coreutils) ls invocation'
+   86  ./countdown 15
+   87  man -k hostname
+   88  man hostnamectl
+   89  lvcreate --help | less
+   90  lsblk
+   91  ls -l /dev/nvme0n1
+   92  pwd
+   93  ls
+   94  ls -a
+   95  ls -al
+   96  ls -lrt /etc
+   97  ls /var/log
+   98  ls -lrt /var/log
+   99  less /var/log/messages
+  100  sudo less /var/log/messages
+  101  cd /etc
+  102  ls a
+  103  ls a*
+  104  ls -d a*
+  105  ls -d ??.*
+  106  ls -d ?[td].*
+  107  ls -d ?[td][a-k]*
+  108  cd /var/log
+  109  pwd
+  110  mkdir files
+  111  cd /tmp
+  112  mkdir files
+  113  rmdir files
+  114  mkdir files
+  115  cp /etc/hosts files/
+  116  ls files/
+  117  tree files
+  118  rmdir files
+  119  rm -rf files/
+  120  cd /
+  121  #sudo rm -rf .
+  122  cd
+  123  ./countdown 1
+  124  history
+  125  man hier
+  126  cd .
+  127  cd /
+  128  ls
+  129  du -hs /usr
+  130  cd /usr
+  131  ks
+  132  ls
+  133  cd local
+  134  ls
+  135  cd
+  136  ls
+  137  sudo cp countdown /usr/local/bin/
+  138  countdown 
+  139  cd /var
+  140  ls
+  141  cd /etc
+  142  cat passwd
+  143  ls /proc
+  144  sudo cat /proc/meminfo 
+  145  history
+  146  cd /var
+  147  ls /var/log/messages
+  148  ls -l /var/log/messages
+  149  cd cache
+  150  pwd
+  151  ls -l ../log/messages 
+  152  cd
+  153  cp /etc/hosts /tmp/myfiles
+  154  ls -l /tmp/myfiles
+  155  diff /etc/hosts /tmp/myfiles
+  156  cat /tmp/myfiles 
+  157  rm -f /tmp/myfiles 
+  158  cp /etc/hosts /tmp/myfiles/
+  159  mkdir /tmp/myfiles; cp /etc/hosts /tmp/myfiles/
+  160  ls
+  161  mv afile bfile
+  162  ls 
+  163  mv bfile /tmp/
+  164  ls -l /tmp/bfile 
+  165  sleep 10; who
+  166  mkdir /tmp && ls
+  167  history
+  168  history > July-16-2024.txt
