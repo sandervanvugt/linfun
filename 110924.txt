@@ -1,0 +1,125 @@
+    1  ls
+    2  echo $SHELL
+    3  cat /etc/os-release 
+    4  version -v
+    5  history
+    6  echo $shell
+    7  echo hello
+    8  echo $SHELL
+    9  whoami
+   10  ls -l /root
+   11  sudo ls -l /root
+   12  id
+   13  sudo visudo
+   14  su -
+   15  id
+   16  cat /etc/passwd
+   17  history
+   18  sudo -i
+   19  su -
+   20  vim countdown
+   21  ls
+   22  cat countdown 
+   23  countdown
+   24  echo $PATH
+   25  ./countdown
+   26  ls -l countdown 
+   27  chmod +x countdown 
+   28  ls -l countdown 
+   29  ./countdown 12
+   30  history
+   31  cat countdown 
+   32  vimtutor
+   33  history
+   34  ssh student@192.168.29.146
+   35  sudo yum install openssh
+   36  ssh student@192.168.29.146
+   37  ssh-keygen 
+   38  ssh-copy-id student@192.168.29.146
+   39  ssh student@192.168.29.146
+   40  history
+   41  sudo rpm -qa | grep virt
+   42  sudo rpm -qa
+   43  sudo rpm -qa | grep open
+   44  cat countdown 
+   45  LS
+   46  ls 
+   47  ls -l
+   48  ls --help
+   49  ls --help | less
+   50  ls -help
+   51  ls -hlp
+   52  ls -lrt
+   53  whoami
+   54  whoami --help
+   55  hostname
+   56  hostname --help
+   57  hostname -s
+   58  hostnamectl --help
+   59  hostnamectl hostname
+   60  hostnamectl hostname linfun.example.com
+   61  hostnamectl hostname
+   62  exit
+   63  history
+   64  date
+   65  date +%d-%m-%Y
+   66  man date
+   67  uname
+   68  uname -r
+   69  passwd
+   70  sudo passwd student
+   71  ls -l countdown 
+   72  touch countdown 
+   73  ls -l countdown 
+   74  pwd
+   75  touch hello
+   76  ls -l
+   77  cd /
+   78  touch hello
+   79  cd
+   80  last
+   81  cd /
+   82  cd ~
+   83  pwd
+   84  cd /
+   85  cd
+   86  history
+   87  man passwd
+   88  man man 
+   89  man password
+   90  man -k password
+   91  man -k password | wc -l
+   92  man -k password 
+   93  man -k password | grep 1
+   94  man passwd
+   95  man -k tokens | grep 1
+   96  man -k password | grep 8
+   97  man -k sander
+   98  man man
+   99  man apropos
+  100  mandb
+  101  sudo mandb
+  102  man ls
+  103  info '(coreutils) ls invocation'
+  104  pinfo '(coreutils) ls invocation'
+  105  man ls
+  106  man -k whatever
+  107  man -k user
+  108  history
+  109  sudo mandb
+  110  man -k password
+  111  man -k password | grep passwd
+  112  man passwd
+  113  man -k hostname
+  114  man hostnamectl
+  115  man hostname
+  116  man 5 hostname
+  117  man sethostname
+  118  man -k hostname
+  119  man man
+  120  man -k hostname | grep 1
+  121  man -k hostname | grep 8
+  122  man lvcreate
+  123  lvcreate --help | less
+  124  sudo dnf install git
+  125  history > /tmp/110924.txt
