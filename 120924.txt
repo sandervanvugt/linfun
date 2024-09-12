@@ -1,0 +1,465 @@
+    1  ls
+    2  echo $SHELL
+    3  cat /etc/os-release 
+    4  version -v
+    5  history
+    6  echo $shell
+    7  echo hello
+    8  echo $SHELL
+    9  whoami
+   10  ls -l /root
+   11  sudo ls -l /root
+   12  id
+   13  sudo visudo
+   14  su -
+   15  id
+   16  cat /etc/passwd
+   17  history
+   18  sudo -i
+   19  su -
+   20  vim countdown
+   21  ls
+   22  cat countdown 
+   23  countdown
+   24  echo $PATH
+   25  ./countdown
+   26  ls -l countdown 
+   27  chmod +x countdown 
+   28  ls -l countdown 
+   29  ./countdown 12
+   30  history
+   31  cat countdown 
+   32  vimtutor
+   33  history
+   34  ssh student@192.168.29.146
+   35  sudo yum install openssh
+   36  ssh student@192.168.29.146
+   37  ssh-keygen 
+   38  ssh-copy-id student@192.168.29.146
+   39  ssh student@192.168.29.146
+   40  history
+   41  sudo rpm -qa | grep virt
+   42  sudo rpm -qa
+   43  sudo rpm -qa | grep open
+   44  cat countdown 
+   45  LS
+   46  ls 
+   47  ls -l
+   48  ls --help
+   49  ls --help | less
+   50  ls -help
+   51  ls -hlp
+   52  ls -lrt
+   53  whoami
+   54  whoami --help
+   55  hostname
+   56  hostname --help
+   57  hostname -s
+   58  hostnamectl --help
+   59  hostnamectl hostname
+   60  hostnamectl hostname linfun.example.com
+   61  hostnamectl hostname
+   62  exit
+   63  ./countdown 12
+   64  ./countdown 1
+   65  ./countdown 12
+   66  ./countdown 5
+   67  ls
+   68  ls -l
+   69  ls -al
+   70  ls -dl /etc
+   71  ls -l /etc
+   72  ls -dl /etc
+   73  ls -lrt /etc
+   74  man lrt
+   75  man ls
+   76  cd /etc
+   77  ls a
+   78  ls a*
+   79  ls -d a*
+   80  ls -d a???
+   81  ls -d a[ln]*
+   82  cd
+   83  mkdir mydir
+   84  ls
+   85  cd mydir/
+   86  pwd
+   87  cd ..
+   88  rmdir mydir/
+   89  mkdir mydir
+   90  ls
+   91  cp /etc/shadow mydir/
+   92  ls -l /etc/shadow
+   93  cp /etc/passwd mydir/
+   94  ls mydir/
+   95  rmdir mydir/
+   96  rm -rf mydir/
+   97  man hier
+   98  man file-hierarchy
+   99  man hier
+  100  touch myfile
+  101  cd /
+  102  touch myfile
+  103  cd
+  104  cd /var/log
+  105  ls
+  106  ls -l
+  107  cat messages 
+  108  sudo cat messages
+  109  history
+  110  ls -l /etc/shadow
+  111  sudo cat /etc/shadow
+  112  ls -l /etc/shadow
+  113  pwd
+  114  ls messages 
+  115  cd ..
+  116  ls messages
+  117  ls
+  118  ls log/messages 
+  119  ls /var/log/message
+  120  cd local
+  121  ls
+  122  pwd
+  123  ls ../log/messages 
+  124  cp /etc/hosts /tmp
+  125  ls -l /etc/hosts /tmp/hosts
+  126  mv /tmp/hosts /tmp/moved
+  127  cd
+  128  history | grep git
+  129  history
+  130  exit
+  131  history
+  132  date
+  133  date +%d-%m-%Y
+  134  man date
+  135  uname
+  136  uname -r
+  137  passwd
+  138  sudo passwd student
+  139  ls -l countdown 
+  140  touch countdown 
+  141  ls -l countdown 
+  142  pwd
+  143  touch hello
+  144  ls -l
+  145  cd /
+  146  touch hello
+  147  cd
+  148  last
+  149  cd /
+  150  cd ~
+  151  pwd
+  152  cd /
+  153  cd
+  154  history
+  155  man passwd
+  156  man man 
+  157  man password
+  158  man -k password
+  159  man -k password | wc -l
+  160  man -k password 
+  161  man -k password | grep 1
+  162  man passwd
+  163  man -k tokens | grep 1
+  164  man -k password | grep 8
+  165  man -k sander
+  166  man man
+  167  man apropos
+  168  mandb
+  169  sudo mandb
+  170  man ls
+  171  info '(coreutils) ls invocation'
+  172  pinfo '(coreutils) ls invocation'
+  173  man ls
+  174  man -k whatever
+  175  man -k user
+  176  history
+  177  sudo mandb
+  178  man -k password
+  179  man -k password | grep passwd
+  180  man passwd
+  181  man -k hostname
+  182  man hostnamectl
+  183  man hostname
+  184  man 5 hostname
+  185  man sethostname
+  186  man -k hostname
+  187  man man
+  188  man -k hostname | grep 1
+  189  man -k hostname | grep 8
+  190  man lvcreate
+  191  lvcreate --help | less
+  192  sudo dnf install git
+  193  history > /tmp/110924.txt
+  194  ip a
+  195  git clone https://github.com/sandervanvugt/linfun
+  196  cd linfun
+  197  ls -l
+  198  echo random command one
+  199  echo random command two
+  200  history
+  201  exit
+  202  sudo -i
+  203  history
+  204  history | grep git
+  205  echo random command three
+  206  echo random command four
+  207  history
+  208  ls -al .bash_history 
+  209  exit
+  210  history
+  211  cd linfun/
+  212  ls
+  213  cat RESOURCES.txt 
+  214  history
+  215  ip a
+  216  mkdir /tmp/trash
+  217  cp -R ~/.* /tmp/trash
+  218  ls -al /tmp/trash/
+  219  pwd
+  220  cd ..
+  221  ls
+  222  cp -R /tmp ~
+  223  ls
+  224  cp -R /tmp ~history
+  225  history
+  226  ls
+  227  ln countdown counter
+  228  ls -il countdown counter 
+  229  vim countdown
+  230  ls -il countdown counter 
+  231  ln -s counter teller
+  232  ls -il teller count*
+  233  rm counter 
+  234  cat countdown 
+  235  ls -il teller count*
+  236  cat teller 
+  237  lsblk
+  238  ls /boot
+  239  sudo ln /boot/vmlinuz-5.14.0-505.el9.aarch64 kernel
+  240  sudo ln -s /boot/vmlinuz-5.14.0-505.el9.aarch64 kernel
+  241  ls -l kernel 
+  242  history
+  243  find / -name "hosts"
+  244  sudo find / -name "hosts"
+  245  sudo find / -name "hosts" 2>/dev/null
+  246  sudo find / -name "*hosts*" 2>/dev/null
+  247  sudo find / -type f -name "*hosts*" 2>/dev/null
+  248  sudo find / -type d -name "bin" 2>/dev/null
+  249  sudo useradd linda
+  250  find / -user linda -type f
+  251  sudo find / -user linda -type f
+  252  df -h
+  253  sudo find / -size +500M
+  254  sudo mdir /root/linda; sudo find / -user linda -type f -exec cp {} /root/linda \;
+  255  sudo mkdir /root/linda; sudo find / -user linda -type f -exec cp {} /root/linda \;
+  256  sudo rm /root/linda
+  257  sudo mkdir /root/linda; sudo find / -user linda -type f -exec cp {} /root/linda \;
+  258  sudo ls /root/linda
+  259  sudo ls -a /root/linda
+  260  sudo tar -cvf /tmp/etc.tar /etc
+  261  ls -l /tmp/etc.tar
+  262  sudo tar -czvf /tmp/etc.tgz /etc
+  263  ls -l /tmp/etc*
+  264  sudo tar -cjvf /tmp/etc.tar.bz2 /etc
+  265  ls -l /tmp/etc.*
+  266  sudo tar -cJvf /tmp/etc.tar.xz /etc
+  267  ls -l /tmp/etc.*
+  268  tar -xf /tmp/etc.tgz .
+  269  tar -xf /tmp/etc.tgz 
+  270  ls
+  271  rm -rf etc
+  272  sudo rm -rf etc
+  273  tar -xf /tmp/etc.tgz /etc/hosts
+  274  tar -xf /tmp/etc.tgz hosts
+  275  history
+  276  sudo tar -tvf /tmp/etc.tgz
+  277  sudo tar -tvf /tmp/etc.tgz | grep hosts
+  278  pwd
+  279  sudo tar -tvf /tmp/etc.tgz hosts
+  280  sudo tar -tvf /tmp/etc.tgz etc/hosts
+  281  ls etc
+  282  ls
+  283  sudo tar -xvf /tmp/etc.tgz etc/hosts
+  284  ls etc/
+  285  sudo tar -xvf /tmp/etc.tgz -C /tmp etc/hosts
+  286  ls /tmp/etc/hosts 
+  287  cd /tmp
+  288  mkdir files/pictures files/photos files/videos
+  289  mkdir -p files/pictures files/photos files/videos
+  290  tree files
+  291  cp /etc/[abc]* files/
+  292  ls files/
+  293  cd files/
+  294  ls
+  295  mv [ab]* photos/
+  296  ls
+  297  mv c* videos/
+  298  man find
+  299  find /etc -size -1000c
+  300  find /etc -size -1000c -exec cp {} pictures/
+  301  find /etc -size -1000c -exec cp {} pictures/ \;
+  302  ls pictures/
+  303  pwd
+  304  ln -s /var .
+  305  ls
+  306  ls -l
+  307  tar czvf ./home.tgz /home
+  308  sudo tar czvf ./home.tgz /home
+  309  ls -l
+  310  tar tvf home.tgz 
+  311  mkdir ../archive
+  312  pwd
+  313  ls ..
+  314  #sudo tar -xvf home.tgz -C ../archive/
+  315  cd ../archive/
+  316  sudo tar -xvf ../files/home.tgz
+  317  history
+  318  cd
+  319  nano myfile
+  320  vimtutor
+  321  cd /etc
+  322  sudo grep student *
+  323  sudo grep student * 2>/dev/null
+  324  sudo grep -l student * 2>/dev/null
+  325  sudo grep -il student * 2>/dev/null
+  326  sudo grep -Ril student * 2>/dev/null
+  327  man -k user
+  328  man -k user | wc -l
+  329  man -k user | grep 8
+  330  ps aux
+  331  ps aux | grep ssh
+  332  ps aux | grep ssh | grep -v grep
+  333  ps faux
+  334  ps faux | grep -v grep | grep -A5 ssh
+  335  sudo grep -C 5 Allow /etc/ssh/sshd_config
+  336  history
+  337  cd
+  338  ls
+  339  cd linfun/
+  340  ls
+  341  cat regex 
+  342  grep '^l' regex 
+  343  grep 'na$' regex 
+  344  cat lea
+  345  cat regex 
+  346  vim regex 
+  347  grep 'lea\b' regex
+  348  grep 'n.*x' regex 
+  349  grep 'n.+x' regex 
+  350  grep -E 'b.+t' regex 
+  351  grep 'b.+t' regex 
+  352  grep 'b.?t' regex 
+  353  grep -E 'b.?t' regex 
+  354  grep 'bon\{3\}nen' regex 
+  355  grep '^.$' regex 
+  356  grep -E '{svm | vmx }' /proc/cpuinfo 
+  357  grep -E '{ svm | vmx }' /proc/cpuinfo 
+  358  cat /etc/passwd
+  359  cut -f 1 /etc/passwd
+  360  cut -f 1 -d : /etc/passwd
+  361  cut -f 1 -d : /etc/passwd | sort
+  362  cut -f 1 -d : /etc/passwd | sort | tr :lower: :upper:
+  363  cut -f 1 -d : /etc/passwd | sort | tr [:lower:] [:upper:]
+  364  cat regex 
+  365  sed -n 5p regex 
+  366  sed -i s/lea/lake/g regex 
+  367  sed -n 5p regex 
+  368  sed -i -e '5d' regex 
+  369  sed -n 5p regex 
+  370  echo one one.conf
+  371  echo one > one.conf
+  372  echo one > two.conf
+  373  echo one > three.conf
+  374  for i in *conf; do echo $i; done
+  375  for i in *conf; do sed -i 's/one/million/' $i; done
+  376  cat two.conf 
+  377  awk -F : '{ print $1 }' /etc/passwd
+  378  history
+  379  awk -F : '/linda/ { print $3 }' /etc/passwd
+  380  awk -F : '$3 > 999 { print $1 }' /etc/passwd
+  381  history
+  382  env
+  383  echo $SHELL
+  384  head /etc/services
+  385  cat /etc/services
+  386  sort </etc/services
+  387  sort /etc/services
+  388  ls
+  389  cd ..
+  390  ls
+  391  ls > outfile
+  392  cat outfile 
+  393  who > outfile
+  394  cat outfile 
+  395  ls >> outfile
+  396  cat outfile 
+  397  grep -R root /proc
+  398  grep -R root /proc 2>/dev/null
+  399  grep -R root /etcx 2>/dev/null
+  400  grep -R root /etc 2>/dev/null
+  401  grep -R root /etc 
+  402  grep -R root /etc &>/dev/null
+  403  history
+  404  echo $HISTFILESIZE 
+  405  echo $HISTSIZE 
+  406  history -w
+  407  sudo sh -c "echo password | passwd --stdin linda"
+  408  history
+  409  history
+  410  history -d 409
+  411  history
+  412  echo sander has left the building
+  413  history
+  414  oc login -u kubeadmin -p ugiugikjgfuyfytdtygiophigfydy
+  415  history
+  416  oc login -u kubeadmin -p ugiugikjgfuyfytdtygiophigfydy
+  417  ls
+  418  sudo sh -c "echo password | passwd --stdin linda"
+  419  touch iugiuguyuyfguyfuygiugiugfuygfuftdtfyftyufuygy
+  420  ls iugiuguyuyfguyfuygiugiugfuygfuftdtfyftyufuygy 
+  421  rm iugiuguyuyfguyfuygiugiugfuygfuftdtfyftyufuygy 
+  422  alias
+  423  ll
+  424  alias lal='ls -la'
+  425  lal
+  426  ls
+  427  ls -a
+  428  vim .bashrc
+  429  sleep 3000
+  430  history
+  431  sleep infinity
+  432  bg
+  433  jobs
+  434  sleep 500 &
+  435  jobs
+  436  fg 1
+  437  kill 12007
+  438  sleep 500 &
+  439  ps aux | grep sleep
+  440  kill -9 12024
+  441  man signals
+  442  man signal
+  443  man 7 signal
+  444  top
+  445  sudo -i 
+  446  free -m
+  447  top
+  448  ps fax | less
+  449  su - linda
+  450  sudo usermod -aG wheel linda
+  451  su - linda
+  452  systemctl status NetworkManager
+  453  ip a
+  454  ip route show
+  455  ping nu.nl
+  456  cat /etc/resolv.conf 
+  457  ifconfig
+  458  lsblk
+  459  sudo mount /dev/nvme0n1p2 /mnt
+  460  ls /mnt
+  461  cd linfun/
+  462  ls
+  463  cat RESOURCES.txt 
+  464  history | grep git
+  465  history > /tmp/120924.txt
