@@ -1,0 +1,319 @@
+    1  whoami
+    2  ls -l /root
+    3  sudo ls -l /root
+    4  sudo -i
+    5  id
+    6  history
+    7  echo $HISTSIZE 
+    8  ssh 192.168.29.182
+    9  sudo dnf install openssh-server
+   10  systemctl status sshd
+   11  history
+   12  LS
+   13  ls
+   14  ls --help
+   15  ls --help | less
+   16  ls -lrt
+   17  ls -help | less
+   18  echo $HISTSIZE 
+   19  echo $histsize
+   20  whoami
+   21  whoami --help
+   22  hostname
+   23  hostname --help
+   24  date
+   25  date --help
+   26  date --help | less
+   27  date
+   28  date +%d-%m-%y
+   29  uname
+   30  uname --help
+   31  uname -a
+   32  passwd
+   33  sudo passwd root
+   34  touch hello
+   35  ls -l
+   36  pwd
+   37  cd /
+   38  touch hello
+   39  cd
+   40  history
+   41  last
+   42  man last
+   43  man useradd
+   44  a
+   45  man man
+   46  man fdisk
+   47  man -k user
+   48  man man
+   49  man apropos
+   50  man mandb
+   51  sudo mandb
+   52  history
+   53  man -k user
+   54  man -k user | wc -l
+   55  man -k user | grep 8
+   56  vim countdown
+   57  chmod +x countdown 
+   58  ./countdown 12
+   59  history
+   60  echo $SHELL
+   61  vim countdown 
+   62  chmod -x countdown 
+   63  countdown
+   64  echo $PATH
+   65  ./countdown
+   66  ls -l countdown 
+   67  chmod +x countdown 
+   68  ./countdown
+   69  ./countdown 1
+   70  countdown
+   71  pwd
+   72  echo $PATH
+   73  cp countdown /usr/local/bin/
+   74  ls -ld /usr/local/bin
+   75  id
+   76  sudo cp countdown /usr/local/bin/
+   77  countdown 1
+   78  man -k hostname
+   79  hostnamectl --help
+   80  hostnamectl hostname linfun.example.com
+   81  exit
+   82  hostnamectl hostname
+   83  man hostnamectl
+   84  man lvcreate
+   85  lvcreate --help | less
+   86  vim test
+   87  ls -l test
+   88  chmod +x test
+   89  test
+   90  which test
+   91  mv test mytest
+   92  mytest
+   93  ./mytest
+   94  cat /etc/passwd
+   95  less /etc/passwd
+   96  cd /var/log
+   97  pwd
+   98  cd
+   99  ls
+  100  ls -l
+  101  ls -al
+  102  exit
+  103  ls -al
+  104  history
+  105  ls -al
+  106  ls -ld /etc
+  107  ls -l /etc
+  108  ls -ld /etc
+  109  ls -l x*
+  110  ls -l /etc/x*
+  111  ls -ld /etc/x*
+  112  ls -lrt /etc
+  113  date
+  114  ls -ld /etc/a*
+  115  ls -ld /etc/a?a*
+  116  ls -ld /etc/a?[a-d]*
+  117  echo globbing
+  118  mkdir test
+  119  ls -l
+  120  rmdir test
+  121  mkdir test
+  122  cp /etc/a* test/
+  123  ls test
+  124  rmdir test
+  125  rm -r test
+  126  #rm -rf /
+  127  ls /usr
+  128  ls /usr/local/
+  129  ls /var
+  130  ls /var/log
+  131  ls -l /var/log
+  132  tail /var/log/messages
+  133  sudo tail /var/log/messages
+  134  man hier
+  135  echo $HOME
+  136  touch ${HOME}/testing
+  137  ls /tmp
+  138  ls /run
+  139  ls -l /run
+  140  history
+  141  cd /var
+  142  sudo tail /var/log/messages
+  143  sudo tail log/messages
+  144  ls
+  145  cd empty/
+  146  ls
+  147  sudo tail log/messages
+  148  sudo tail /var/log/messages
+  149  sudo tail ../log/messages
+  150  cd
+  151  #sudo cp /etc/skel/.* ~
+  152  mkdir testdir
+  153  ls -al /etc/skel/
+  154  cp -ar /etc/skel/.* testdir/
+  155  cd /etc/skel
+  156  ls -a
+  157  cp -a .* /home/student/testdir/
+  158  cd 
+  159  cp R /tmp/* .
+  160  cp -R /tmp/* .
+  161  ls
+  162  ls -l
+  163  rm -rf systemd* vmware-root_846-2697139606
+  164  ls
+  165  history
+  166  mkdir /tmp/trash
+  167  cp -aR .* /tmp/trash/
+  168  ls -a /tmp/trash/
+  169  mkdir /tmp/dummy
+  170  touch /tmp/dummy/afile
+  171  touch /tmp/dummy/bfile
+  172  cd /tmp
+  173  cp -R dummy/ ~
+  174  ls
+  175  ls ~
+  176  cd ..
+  177  cp -R /tmp ~
+  178  cd
+  179  ls
+  180  rm -rf dummy/ tmp/
+  181  ls
+  182  cp /etc/hosts .
+  183  ls -il  /etc/hosts hosts
+  184  echo hello
+  185  echo hello >> hosts
+  186  ls -il  /etc/hosts hosts
+  187  ln hosts comps
+  188  ls -il hosts comps
+  189  echo bonjour >> hosts
+  190  ls -il hosts comps
+  191  echo gutentag >> comps
+  192  ls -il hosts comps
+  193  ln hosts symhosts
+  194  ls -il hosts comps symhosts
+  195  rm symhosts 
+  196  ln -s hosts symhosts
+  197  ls -il hosts comps symhosts
+  198  rm hosts
+  199  ls -il hosts comps symhosts
+  200  cat hosts
+  201  cat symhosts 
+  202  cp /etc/passwd hosts
+  203  ls -il hosts comps symhosts
+  204  ls -l /
+  205  history
+  206  sudo dnf install -y git
+  207  history -w
+  208  ./countdown 12
+  209  ./countdown 1
+  210  ls -al
+  211  history
+  212  ls -al
+  213  ls -ld /etc
+  214  ls -l /etc
+  215  ls -ld /etc
+  216  ls -l x*
+  217  ls -l /etc/x*
+  218  ls -ld /etc/x*
+  219  ls -lrt /etc
+  220  date
+  221  ls -ld /etc/a*
+  222  ls -ld /etc/a?a*
+  223  ls -ld /etc/a?[a-d]*
+  224  echo globbing
+  225  mkdir test
+  226  ls -l
+  227  rmdir test
+  228  mkdir test
+  229  cp /etc/a* test/
+  230  ls test
+  231  rmdir test
+  232  rm -r test
+  233  #rm -rf /
+  234  ls /usr
+  235  ls /usr/local/
+  236  ls /var
+  237  ls /var/log
+  238  ls -l /var/log
+  239  tail /var/log/messages
+  240  sudo tail /var/log/messages
+  241  man hier
+  242  echo $HOME
+  243  touch ${HOME}/testing
+  244  ls /tmp
+  245  ls /run
+  246  ls -l /run
+  247  history
+  248  cd /var
+  249  sudo tail /var/log/messages
+  250  sudo tail log/messages
+  251  ls
+  252  cd empty/
+  253  ls
+  254  sudo tail log/messages
+  255  sudo tail /var/log/messages
+  256  sudo tail ../log/messages
+  257  cd
+  258  #sudo cp /etc/skel/.* ~
+  259  mkdir testdir
+  260  ls -al /etc/skel/
+  261  cp -ar /etc/skel/.* testdir/
+  262  cd /etc/skel
+  263  ls -a
+  264  cp -a .* /home/student/testdir/
+  265  cd 
+  266  cp R /tmp/* .
+  267  cp -R /tmp/* .
+  268  ls
+  269  ls -l
+  270  rm -rf systemd* vmware-root_846-2697139606
+  271  ls
+  272  history
+  273  mkdir /tmp/trash
+  274  cp -aR .* /tmp/trash/
+  275  ls -a /tmp/trash/
+  276  mkdir /tmp/dummy
+  277  touch /tmp/dummy/afile
+  278  touch /tmp/dummy/bfile
+  279  cd /tmp
+  280  cp -R dummy/ ~
+  281  ls
+  282  ls ~
+  283  cd ..
+  284  cp -R /tmp ~
+  285  cd
+  286  ls
+  287  rm -rf dummy/ tmp/
+  288  ls
+  289  cp /etc/hosts .
+  290  ls -il  /etc/hosts hosts
+  291  echo hello
+  292  echo hello >> hosts
+  293  ls -il  /etc/hosts hosts
+  294  ln hosts comps
+  295  ls -il hosts comps
+  296  echo bonjour >> hosts
+  297  ls -il hosts comps
+  298  echo gutentag >> comps
+  299  ls -il hosts comps
+  300  ln hosts symhosts
+  301  ls -il hosts comps symhosts
+  302  rm symhosts 
+  303  ln -s hosts symhosts
+  304  ls -il hosts comps symhosts
+  305  rm hosts
+  306  ls -il hosts comps symhosts
+  307  cat hosts
+  308  cat symhosts 
+  309  cp /etc/passwd hosts
+  310  ls -il hosts comps symhosts
+  311  ls -l /
+  312  history
+  313  sudo dnf install -y git
+  314  history -w
+  315  sudo reboot
+  316  sudo dnf install -y git
+  317  sudo dnf clean all
+  318  sudo dnf install -y git
+  319  history > /tmp/history-16oct24.txt
