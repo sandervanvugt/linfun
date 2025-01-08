@@ -1,0 +1,162 @@
+    1  sudo dnf install -y git vim
+    2  git clone https://github.com/sandervanvugt/linfun
+    3  cd linfun/
+    4  ls
+    5  history
+    6  ./countdown 13
+    7  history
+    8  whoami
+    9  id
+   10  ls
+   11  ls -l
+   12  countdown
+   13  echo $PATH
+   14  ./countdown 
+   15  ./countdown 1
+   16  sudo dnf repolist
+   17  sudo subscription-manager register
+   18  ls -l /etc/shadow
+   19  sudo cat /etc/shadow
+   20  ls -l /etc/shadow
+   21  ls -l /root
+   22  sudo ls -l /root
+   23  ssh student@192.168.29.182
+   24  cat /etc/os-release 
+   25  history
+   26  ssh student@192.168.29.182
+   27  history
+   28  LS
+   29  ls
+   30  ls -l
+   31  ls --help
+   32  ls --help | less
+   33  ls -lrt
+   34  ls -help
+   35  less /etc/hosts
+   36  whoami
+   37  hostname
+   38  hostnamectl hostname linfun.example.local
+   39  hostname
+   40  exit
+   41  history
+   42  date
+   43  date +%d-%m-%y
+   44  date +%d.%m.%y
+   45  date +%Y.%m.%d
+   46  man date
+   47  timedatectl --help
+   48  man timedatectl
+   49  uname
+   50  man uname
+   51  uname -pr
+   52  uname -r
+   53  arch
+   54  history
+   55  passwd
+   56  sudo passwd root
+   57  cd /
+   58  pwd
+   59  touch hello
+   60  cd
+   61  touch hello
+   62  ls -l hello
+   63  last
+   64  cd linfun/
+   65  ./countdown 
+   66  cp countdown /usr/local/bin/
+   67  ls -ld /usr/local/bin
+   68  sudo cp countdown /usr/local/bin/
+   69  countdown 1
+   70  man ls
+   71  man man
+   72  man ls
+   73  man useradd
+   74  man date
+   75  man useradd
+   76  man chfn
+   77  man -k password
+   78  man -k user
+   79  man wall
+   80  man -k user
+   81* man -k user | 
+   82  man -k user | grep 8
+   83  man -k sander
+   84  man man
+   85  man apropos
+   86  mandb
+   87  sudo mandb
+   88  history
+   89  man -k hostname
+   90  man hostnamectl
+   91  history | grep hostnamectl
+   92  lvcreate --help | less
+   93  lsblk
+   94  ls -l /dev/nvme0n1
+   95  cat /etc/shadow
+   96  sudo cat /etc/shadow
+   97  cat /etc/passwd
+   98  cat /etc/hosts
+   99  pwd
+  100  vimtutor 
+  101  which vimtutor
+  102  rpm -qf $(which vimtutor)
+  103  sudo dnf install vim-enhanced
+  104  cd ..
+  105  ls -a
+  106  ls
+  107  cd /etc
+  108  ls c*
+  109  ls -d c*
+  110  ls -d a*
+  111  ls -d a??a*
+  112  ls -d ????
+  113  ls *.*
+  114  ls -d *.*
+  115  ls -d [ab]*
+  116  ls -d [a-d]*
+  117  cd /home
+  118  ls
+  119  cd student/
+  120  mkdir blah
+  121  rmdir blah
+  122  mkdir blah
+  123  touch blah/one
+  124  rmdir blah/
+  125  rm -r blah
+  126  mkdir one/two/three
+  127  mkdir -p one/two/three
+  128  mkdir two three four
+  129  ls
+  130  rmdir two three four
+  131  cd /
+  132  ls
+  133  man hier
+  134  ls -l 
+  135  ldd /bin/ls
+  136  ls /boot
+  137  ls -l /boot
+  138  ls 
+  139  ls /var
+  140  ls /var/log
+  141  ls /proc
+  142  less /proc/meminfo 
+  143  less /proc/cpuinfo 
+  144  cd /proc/sys
+  145  ls
+  146  cd net/ipv6/
+  147  ls
+  148  cd ..
+  149  sysctl -a 
+  150  sysctl -a | grep disable
+  151  sysctl -a | grep disable 2>/dev/null
+  152  cd ipv6/conf/all
+  153  ip a
+  154  echo 1 > disable_ipv6 
+  155  sudo echo 1 > disable_ipv6 
+  156  cd
+  157  pwd
+  158  cd /tmo
+  159  cd /tmp
+  160  touch me
+  161  ls -ld .
+  162  history > jan25.txt
