@@ -160,3 +160,279 @@
   160  touch me
   161  ls -ld .
   162  history > jan25.txt
+  163  ip a
+  164  history | less
+  165  cd
+  166  ls -l /var/log/messages 
+  167  cd /var
+  168  ls -l log/messages 
+  169  cd cache/
+  170  ls -l ../log/messages 
+  171  ls
+  172  cd ../log
+  173  sudo cp dnf.rpm.log ~
+  174  cd
+  175  ls
+  176  ls -a
+  177  mkdir /tmp/sander ; cp -a .* /tmp/sander/
+  178  cd /tmp/sander
+  179  ls
+  180  ls -a
+  181  cd
+  182  touch today
+  183  mv today tomorrow
+  184  pwd
+  185  ln /etc/hosts myhosts
+  186  sudo ln /etc/hosts myhosts
+  187  ls -l /etc/hosts
+  188  ls -l myhosts 
+  189  rm myhosts 
+  190  ls -ld .
+  191  cp /etc/hosts .
+  192  ls
+  193  ls -l
+  194  ln hosts morehosts
+  195  ls -il host morehosts 
+  196  ls -il hosts morehosts 
+  197  echo hello >> hosts
+  198  ls -il hosts morehosts 
+  199  cat morehosts 
+  200  cat hosts
+  201  ln -s /home/sander/hosts symhosts
+  202  ls -il hosts morehosts symhosts 
+  203  rm symhosts 
+  204  ln -s /home/student/hosts symhosts
+  205  ls -il hosts morehosts symhosts 
+  206  ln -s hosts moresumhosts
+  207  ls -il hosts morehosts symhosts moresumhosts 
+  208  cd /
+  209  ls -l
+  210  find / -name "hosts"
+  211  find / -name "hosts" 2>/dev/null
+  212  find / -name "*hosts*" 2>/dev/null
+  213  sudo useradd linda
+  214  sudo find / -user linda
+  215  sudo find / -user linda -type f 2>/dev/null
+  216  sudo find / -size +500M 2>/dev/null
+  217  sudo find / -user linda -exec ls -l {} \;
+  218  sudo find / -user linda -type f -exec ls -l {} \; 2>/dev/null
+  219  echo hello ; sudo find / -user linda -type f -exec ls -l {} \; 2>/dev/null
+  220  ls && who
+  221  ls ytfytfytf && who
+  222  ls ytfytfytf || who
+  223  ls  || who
+  224  history
+  225  sudo tar -cvf archive.tar /home
+  226  pwd
+  227  ls -l
+  228  tar -tvf archive.tar 
+  229  tar -xvf archive.tar -C /tmp
+  230  ls /tmp
+  231  tree /tmp/home/
+  232  history
+  233  sudo tar -czvf archive.tar.gz /home
+  234  ls -l archi*
+  235  sudo tar -cjvf archive.tar.bz2 /home
+  236  ls -l archi*
+  237  sudo tar -cJvf archive.tar.xz /home
+  238  ls -l archi*
+  239  sudo tar cJvf archive.tar.xz /home
+  240  ps aux
+  241  ps -aux
+  242  ps -ef
+  243  countdown 5
+  244  cd
+  245  cd /tmp
+  246  mkdir files
+  247  cd files/
+  248  mkdir pictures photos videos
+  249  cp /etc/[a-c]* .
+  250  ls
+  251  mv [ab]* photos/
+  252  mv c* videos/
+  253  tree
+  254  man find
+  255  find /etc -size -1000c
+  256  find /etc -size -1000c -exec ls -l {} \;
+  257  find /etc -size -1000c -exec cp {} pictures/ \;
+  258  ls -l pictures/
+  259  ln /var .
+  260  ln -s /var .
+  261  ls
+  262  tar -czvf home.tgz /home
+  263  sudo tar -czvf home.tgz /home
+  264  mkdir ../archive && tar xvf home.tgz -C /tmp/archive
+  265  countdown 1
+  266  countdown 12
+  267  nano helloworld
+  268  vim helloworld 
+  269  more /etc/passwd
+  270  less /etc/passwd
+  271  head /etc/passwd
+  272  head -5 /etc/passwd
+  273  tail -5 /etc/passwd
+  274  tail -5 /etc/passwd | head -1
+  275  cat /etc/hosts
+  276  tac /etc/hosts
+  277  cd /etc
+  278  sudo grep student *
+  279  sudo grep student * 2>/dev/null
+  280  sudo grep -l student * 2>/dev/null
+  281  sudo grep -li student * 2>/dev/null
+  282  ps aux | grep ssh
+  283  ps aux | grep ssh | grep -v grep
+  284  ps faux | less
+  285  ps faux | grep gdm -A 5
+  286  ps faux | grep grep -B 5
+  287  grep 'a*' a*
+  288  man 7 regex
+  289  cd
+  290  cd linfun/
+  291  ls
+  292  vim regex 
+  293  grep '^l' regex 
+  294  grep 'anna$' regex 
+  295  grep '^lea' regex 
+  296  grep '^lea\b' regex 
+  297  grep 'n.*x' regex 
+  298  grep 'n.+x' regex 
+  299  grep -E 'n.+x' regex 
+  300  grep -E 'bi?t' regex 
+  301  grep -E 'b.*t' regex 
+  302  grep -E 'b.+t' regex 
+  303  grep 'bin\{3\}nen' regex 
+  304  grep 'bon\{3\}nen' regex 
+  305  grep '^.$' regex
+  306  grep -E '{ b.*t | n.*x }' regex 
+  307  grep -E '{ bit | nix }' regex 
+  308  grep  '{ bit | nix }' regex 
+  309  man semanage-fcontext
+  310  cat /etc/passwd
+  311  cut -d : -f 1 /etc/passwd
+  312  cut -d : -f 1 /etc/passwd | sort
+  313  cut -d : -f 1 /etc/passwd | sort | tr :lower: :upper:
+  314  cut -d : -f 1 /etc/passwd | sort | tr [:lower:] [:upper:]
+  315  history
+  316  sed -n 5p /etc/passwd
+  317  head -5 /etc/passwd | tail -1
+  318  head regex 
+  319  sed -i -e '3d' regex 
+  320  head regex 
+  321  sed -i s/unix/linux/g regex 
+  322  head regex 
+  323  echo one > one
+  324  echo one > two
+  325  echo one > three
+  326  cat two
+  327  for i in {one,two,three}; do sed -i 's/one/ONE/'; done
+  328  for i in {one,two,three}; do sed -i 's/one/ONE/' $i; done
+  329  cattwo
+  330  cat two
+  331  awk -F : '{ print $1 }' /etc/passwd
+  332  awk -F : '/student/ { print $4 }' /etc/passwd
+  333  awk -F : '$3 > 999 { print $1 }' /etc/passwd
+  334  tail -1 /etc/passwd
+  335  ifconfig
+  336  ip addr show
+  337  ip a
+  338  man ifconfig
+  339  sudo rpm -qf $(which ifconfig)
+  340  sudo rpm -ql net-tools
+  341  countdown 13
+  342  history
+  343  head -5 /etc/passwd | tail -1
+  344  sed -n 5p /etc/passwd
+  345  ps aux | awk '{ print $1 }'
+  346  grep -l '^root' /etc/*
+  347  grep -l '^root' /etc/* 2>/dev/null
+  348  grep '...' /etc/* 2>/dev/null
+  349  grep '^...$' /etc/* 2>/dev/null
+  350  vim regex 
+  351  grep alex regex
+  352  grep alex\b regex
+  353  grep 'alex\b' regex
+  354  history
+  355  ls > outfile
+  356  who > outfile
+  357  cat outfile 
+  358  ls >> outfile
+  359  grep root /etc/*
+  360  grep root /etc/* 2>/dev/null
+  361  grep root /etc/* 2> errors.txt
+  362  grep root /etc/* &>/dev/null
+  363  history
+  364  echo $HISTSIZE 
+  365  echo $HISTFILESIZE 
+  366  history
+  367  countdown 13
+  368  sudo sh -c "echo password | passwd --stdin linda"
+  369  history
+  370  history -d 355
+  371  history
+  372  ps aux | awk '{ print $1 }'
+  373  sudo find / -user linda -type f 2>/dev/null
+  374  sudo userhelper --help | less
+  375  sudo userhelper 
+  376  sudo userhelper -h
+  377  man userhelper
+  378  echo $PATH
+  379  env
+  380  alias
+  381  alias break="countdown 12"
+  382  break
+  383  sudo vim /etc/bashrc
+  384  which break
+  385  unalias break
+  386  which break
+  387  sudo vim /etc/bashrc
+  388  source /etc/bashrc
+  389  break 
+  390  vim ~/.bashrc
+  391  history
+  392  sudo vim /etc/bashrc
+  393  source /etc/bashrc
+  394  echo $COLOR
+  395  ipconfig
+  396  sleep 300
+  397  bg
+  398  sleep 3000
+  399  bg
+  400  sleep 30000 &
+  401  jobs
+  402  fg 2
+  403  sudo ps aux | grep sleep
+  404  sudo kill 170468
+  405  systemctl list-units
+  406  sudo dnf install httpd
+  407  sudo systemctl status httpd
+  408  sudo systemctl enable --now httpd
+  409  systemctl status httpd
+  410  systemctl status sshd
+  411  sudo kill -9 1112
+  412  systemctl status sshd
+  413  history
+  414  sudo top
+  415  top
+  416  ls
+  417  less RESOURCES.txt 
+  418  sudo dnf search nmap
+  419  sudo dnf groups list
+  420  sudo dnf groups install "Security Tools"
+  421  sudo dnf provides */sealert
+  422  sudo dnf provides */Containerfile
+  423  sudo useradd anna
+  424  sudo passwd anna
+  425  sudo usermod -aG wheel anna
+  426  vim runme
+  427  ./runme
+  428  ls -l runme 
+  429  chmod +x runme 
+  430  ls -l runme 
+  431  ./runme 
+  432  grep wheel /etc/group
+  433  lsblk
+  434  sudo mount /dev/nvme0n1p2 /mnt
+  435  ls /mnt
+  436  history
+  437  ip a
+  438  history > /tmp/jan25.txt 
