@@ -1,0 +1,223 @@
+    1  exit
+    2  whoami
+    3  ls /root
+    4  sudo ls /root
+    5  whoami
+    6  man pkexec
+    7  pkexec ls /root
+    8  id
+    9  sudo systemctl status sshd
+   10  sudo server sshd status
+   11  sudo service sshd status
+   12  whoami
+   13  history
+   14  cat /etc/os-release 
+   15  sudo dnf install openssh
+   16  history
+   17  man dnf
+   18  ip a
+   19  ssh student@192.168.29.145
+   20  ls --help 
+   21  ls --help | less
+   22  ls -l /etc/passwd
+   23  ls -l -r -t /etc/*
+   24  ls -lrt /etc/*
+   25  ls --help | less
+   26  sudo netstat -tulpen
+   27  whoami
+   28  hostname
+   29  date
+   30  uname
+   31  uname -a
+   32  uname --help | less
+   33  uname -r
+   34  passwd
+   35  touch test
+   36  ls
+   37  ls -l
+   38  cd /etc
+   39  touch test
+   40  cd ~
+   41  last
+   42  file test
+   43  echo hello 
+   44  echo hello > test
+   45  file test
+   46  file /bin/passwd
+   47  history
+   48  man ls
+   49  man passwd
+   50  vim countdown
+   51  countdown 12
+   52  echo $PATH
+   53  ./countdown 12
+   54  ls -l countdown 
+   55  chmod +x countdown 
+   56  ./countdown 12
+   57  history
+   58  echo $SHELL
+   59  nano countdown 
+   60  countdown
+   61  echo $PATH
+   62  pwd
+   63  ./countdown 1
+   64  history
+   65  chmod -x countdown 
+   66  ls -l countdown 
+   67  ./countdown
+   68  chmod +x countdown 
+   69  ./countdown
+   70  which vi
+   71  which vim
+   72  ls -l /usr/bin/vi /usr/bin/vim
+   73  vimtutor
+   74  man man
+   75  man passwd
+   76  man useradd
+   77  man -k user
+   78  man -k user | wc
+   79  man -k user | grep 8
+   80  man -k sander
+   81  man man
+   82  man apropos
+   83  man mandb
+   84  mandb
+   85  sudo mandb
+   86  ./countdown 5
+   87  man -k hostname
+   88  man hostnamectl
+   89  hostnamectl --help
+   90  hostnamectl hostname linfun2.example.com
+   91  exit
+   92  hostnamectl status
+   93  lvcreate --help | less
+   94  pwd
+   95  ls
+   96  ls -l
+   97  man passwd
+   98  man hostname
+   99  history
+  100  ls -l
+  101  ls
+  102  ls -a
+  103  touch .sander
+  104  ls
+  105  ls -a
+  106  cd /etc
+  107  ls d*
+  108  ls -d d*
+  109  ls -lrt
+  110  man ls
+  111  ls -lrt
+  112  cd 
+  113  mkdir -p one/two/three
+  114  touch one/hosts
+  115  touch one/two/hosts
+  116  touch one/two/three/hosts
+  117  tree
+  118  ls **/hosts
+  119  mkdir four
+  120  touch four/hosts
+  121  ls */hosts
+  122  cd /etc
+  123  ls
+  124  ls m?n*
+  125  ls m[a-e]*
+  126  ls m[ae]*
+  127  ls
+  128  cd
+  129  ls
+  130  rmdir four
+  131  rm -r four/
+  132  ./countdown 12
+  133  history
+  134  cd /
+  135  ls
+  136  cd usr
+  137  ls
+  138  cd local
+  139  ls
+  140  cd
+  141  ls
+  142  ./countdown 
+  143  echo $PATH
+  144  cp countdown /usr/local/bin/
+  145  ls -l /usr/local/bin/
+  146  ls -ld /usr/local/bin/
+  147  sudo cp countdown /usr/local/bin/
+  148  countdown 
+  149  cd /var
+  150  ls
+  151  cd log
+  152  ls
+  153  cd /etc
+  154  ls
+  155  vim passwd
+  156  man hier
+  157  man file-hierarchy
+  158  cd /boot
+  159  ls
+  160  ls -l
+  161  ls -l /dev
+  162  lsblk
+  163  ls -l /dev/nvme*
+  164  cd /proc
+  165  ls
+  166  sudo cat meminfo 
+  167  ls -l /dev/nvme*
+  168  cd
+  169  ls -l /var/log/messages 
+  170  ls -l test 
+  171  ls -l /home/student/test
+  172  tree
+  173  ls -l one/hosts
+  174  cd one
+  175  ls -l two/hosts
+  176  tree
+  177  ls ../test
+  178  ls -l ../test
+  179  ls -l /home/student/test
+  180  cd ..
+  181  sudo cp test /testdir
+  182  ls -l /testdir 
+  183  sudo rm -f /testdir 
+  184  sudo mkdir /testdir
+  185  sudo cp test /test/
+  186  mkdir /tmp/sander
+  187  cp * /tmp/sander
+  188  ls -a /tmp/sander
+  189  cp -a .* /tmp/sander
+  190  ls -a /tmp/sander
+  191  man cp
+  192  ls -a
+  193  cp --help | less
+  194  ls -a | cp /tmp
+  195  ls
+  196  mv test testgin
+  197  ls
+  198  mv testgin /tmp
+  199  countdown 4
+  200  mkdir /tmp/trash
+  201  cp -a ~/.* /tmp/trash
+  202  cp -R /tmp .
+  203  ls
+  204  ls tmp/
+  205  ls -ld tmp/
+  206  rm -rf tmp/
+  207  echo hello > hellofile
+  208  ln hellofile anotherfile
+  209  ls -l hellofile anotherfile 
+  210  echo morestuff >> anotherfile 
+  211  ls -l hellofile anotherfile 
+  212  cat hellofile 
+  213  cat anotherfile 
+  214  ls -li hellofile anotherfile 
+  215  ln -s hellofile symbolocifile
+  216  ls -li hellofile anotherfile symbolocifile 
+  217  cat symbolocifile 
+  218  rm hellofile 
+  219  ls -li hellofile anotherfile symbolocifile 
+  220  cd /
+  221  ls -l
+  222  cd
+  223  history > /tmp/mar25.txt
