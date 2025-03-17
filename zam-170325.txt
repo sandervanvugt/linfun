@@ -1,0 +1,216 @@
+    1  whoami
+    2  pwd
+    3  ls
+    4  touch hello
+    5  ls
+    6  cd /
+    7  ls
+    8  touch hello
+    9  cd
+   10  top
+   11  sudo systemctl isolate multi-user.target
+   12  top
+   13  sudo systemctl start graphical.target
+   14  id
+   15  vim countdown
+   16  ls -l countdown 
+   17  vim countdown
+   18  countdown
+   19  echo $PATH
+   20  pwd
+   21  ./countdown
+   22  ls -l countdown 
+   23  chmod +x countdown 
+   24  ./countdown
+   25  history
+   26  echo $PATH
+   27  cp countdown /usr/local/bin/
+   28  whoami
+   29  ls -ld /usr/local/bin
+   30  sudo cp countdown /usr/local/bin/
+   31  countdown 1
+   32  history
+   33  man ls
+   34  man semanage-fcontext
+   35  history
+   36  sleep 3000
+   37  top
+   38  sleep infinity &
+   39  sleep 3600 &
+   40  top
+   41  ps aux
+   42  kill 9480
+   43  kill -9 9475
+   44  ps aux | less
+   45  top
+   46  man kill
+   47  man signal
+   48  man 7 signal
+   49  history
+   50  man ls
+   51  man whoami
+   52  man -k user
+   53  mandb
+   54  sudo mandb
+   55  man -k user 
+   56  man -k user | wc -l
+   57  man -k user | grep 8
+   58  lsblk
+   59  cd /dev
+   60  ls
+   61  \ls
+   62  lsblk
+   63  cd /boot
+   64  ls
+   65  ls -l
+   66  cd /etc
+   67  ls
+   68  cat passwd
+   69  man hier
+   70  man man
+   71  man -k user
+   72  man -k user | grep 8
+   73  man man
+   74  ls
+   75  ls a*
+   76  ls -d a*
+   77  ls */a*
+   78  ls -d */a*
+   79  cd 
+   80  ls
+   81  \ls
+   82  ls -a
+   83  history
+   84  cat .bash_history 
+   85  cd /etc
+   86  cd /var/log
+   87  ls -lrt
+   88  history
+   89  history | grep cp
+   90  sudo -i
+   91  history -w
+   92  sudo -i
+   93  ls -a
+   94  mkdir /tmp/files
+   95  cp -r * /tmp/files/
+   96  echo $?
+   97  ls /tmp/files/
+   98  ls -a /tmp/files/
+   99  cd /etc
+  100  cp [abc]* /tmp/files/
+  101  ls /tmp/files
+  102  cp [d-f]?*a /tmp/files/
+  103  cd ../tmp
+  104  rm files/
+  105  rmdir files/
+  106  rm --help
+  107  rm -r files/
+  108  echo $?
+  109  rm --help
+  110  rm --help | less
+  111  less /var/log/messages 
+  112  sudo less /var/log/messages 
+  113  cd
+  114  echo hello > hello.txt
+  115  ls -il hello.txt 
+  116  cp hello.txt bye.txt
+  117  ls -il hello.txt bye.txt 
+  118  echo how are you >> hello.txt 
+  119  cat hello.txt
+  120  ls -il hello.txt bye.txt 
+  121  ln hello.txt wahtever.txt
+  122  ls -il *txt
+  123  echo iets >> wahtever.txt 
+  124  ls -il *txt
+  125  mkdir /tmp/files/pictures /tmp/files/photos /tmp/files/videos
+  126  mkdir -p /tmp/files/pictures /tmp/files/photos /tmp/files/videos
+  127  cd /tmp/files/
+  128  cp /etc/[a-c]* .
+  129  ls /etc/[a-c]*
+  130  ls -d /etc/[a-c]*
+  131  pwd
+  132  mv [ab]* photos/
+  133  ls -l photos/
+  134  mv c* videos/
+  135  cd ..
+  136  tree
+  137  cd files
+  138  tree
+  139  cd /
+  140  ls
+  141  ls -l
+  142  ls -l /bin/passwd 
+  143  cd 
+  144  ping nu.nl
+  145  ip a
+  146  sudo nmtui
+  147  ip a
+  148  ping nu.nl
+  149  cat /etc/os-release 
+  150  sudo dnf repolist
+  151  sudo dnf search man
+  152  sudo dnf install man-pages mandb
+  153  sudo reboot
+  154  sudo dnf install -y man-pages
+  155  ls -l /usr/bin/dnf /usr/bin/yum
+  156  tail -5 /etc/passwd
+  157  cut -f 1 /etc/passwd
+  158  cut -d : -f 1 /etc/passwd
+  159  cut -d : -f 1 /etc/passwd | sort
+  160  less /etc/passwd
+  161  ps aux | grep sleep
+  162  ps aux | grep ssh
+  163  ps aux | grep ssh | grep -v grep
+  164  cd /etc
+  165  grep student *
+  166  grep student * 2>/dev/null
+  167  grep -l student * 2>/dev/null
+  168  sudo useradd alex
+  169  sudo useradd alexander
+  170  grep alex * 2>/dev/null
+  171  grep alex: * 2>/dev/null
+  172  cd
+  173  vim regex
+  174  grep 'anna' regex 
+  175  grep '^anna' regex 
+  176  grep 'anna$' regex 
+  177  grep 'a..a$' regex 
+  178  echo abba >> regex 
+  179  grep 'a..a$' regex 
+  180  grep 'anna$' regex 
+  181  grep 'anna\b' regex 
+  182  grep 'an.*a' regex 
+  183  grep 'ann*a' regex 
+  184  grep '..*[:space:]..*' regex 
+  185  grep '..*[[:space:]]..*' regex 
+  186  vim regex 
+  187  grep 'bo+t' regex 
+  188  grep -E 'bo+t' regex 
+  189  echo bo+t >> regex 
+  190  grep 'bo+t' regex 
+  191  echo bt >> regex 
+  192  grep -E 'bo?t' regex 
+  193  grep '\alex\b' regex 
+  194  grep 'alex\b' regex 
+  195  awk '{ print $0 }' /etc/passwd
+  196  awk '{ print $1 }' /etc/passwd
+  197  awk '{ print $0 }' /etc/passwd
+  198  awk '{ print $1 }' /etc/passwd
+  199  awk -F : '{ print $1 }' /etc/passwd
+  200  ps aux | cut -f 1
+  201  ps aux | cut -d ' ' -f 1
+  202  ps aux | awk '{ print $1 }'
+  203  awk '/student/ { print $3 }' /etc/passwd
+  204  tail -3 /etc/passwd
+  205  awk -F : '/student/ { print $3 }' /etc/passwd
+  206  awk -F : ' $3 > 999 { print $1 }' /etc/passwd
+  207  sort -t: -k3,n /etc/passwd
+  208  sort -t: -k3,3n /etc/passwd
+  209  sed -i 's/alex/santos/g' regex 
+  210  cat regex
+  211  sed -i -e '1d' regex 
+  212  sed -i -e '49d' regex 
+  213  echo $?
+  214  history
+  215  history | less
+  216  history > /tmp/zam-170325.txt
