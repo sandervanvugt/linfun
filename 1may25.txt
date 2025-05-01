@@ -1,0 +1,187 @@
+    1  whoami
+    2  sudo -i
+    3  id
+    4  sudo ls /root
+    5  ls -l /etc/passwd /etc/shadow
+    6  cat /etc/passwd
+    7  cat /etc/shadow
+    8  ls -l /etc/shadow
+    9  sudo cat /etc/shadow
+   10  ls -l /etc/shadow
+   11  pwd
+   12  history
+   13  ssh student@192.168.29.138
+   14  cat /etc/os-release 
+   15  history
+   16  LS
+   17  ls
+   18  ls -l
+   19  ls --help
+   20  ls --help | less
+   21  ls -lrt
+   22  ls --help | less
+   23  cd /etc
+   24  ls
+   25  ls -lrt
+   26  whoami
+   27  hostname
+   28  hostnamectl hostname linfun.example.com
+   29  exit
+   30  history
+   31  date
+   32  date +%d-%m-%Y
+   33  man data
+   34  man date
+   35  date +%A %d-%m-%Y
+   36  date +"%A %d-%m-%Y"
+   37  date +%A %d-%m-%Y
+   38  uname
+   39  uname --help
+   40  uname -r
+   41  passwd
+   42  sudo passwd root
+   43  uname -v
+   44  man uname
+   45  uname -v
+   46  uname -r
+   47  touch test
+   48  ls -l
+   49  cd /
+   50  touch test
+   51  cd
+   52  last
+   53  vim counter
+   54  chmod +x counter 
+   55  ./counter 12
+   56  vim counter
+   57  ./counter 12
+   58  history
+   59  nano counter
+   60  vim counter
+   61  echo $(( 2 * 3 ))
+   62  echo hello
+   63  echo $PATH
+   64  vim counter
+   65  chmod -x counter 
+   66  ls -l counter 
+   67  counter
+   68  echo $PATH
+   69  ./counter
+   70  chmod +x counter
+   71  ls -l counter 
+   72  ./counter 1
+   73  history
+   74  cat counter 
+   75  ./counter 1
+   76  ./counter 
+   77  echo $PATH
+   78  cp counter /usr/local/bin
+   79  sudo cp counter /usr/local/bin
+   80  counter 1
+   81  man man
+   82  history
+   83  man cp
+   84  man passwd
+   85  man 5 passwd
+   86  man cp
+   87  pinfo '(coreutils) cp invocation'
+   88  info '(coreutils) cp invocation'
+   89  sudo dnf install pinfo
+   90  sudo dnf install info
+   91  man man
+   92  man -k user
+   93  man -k user | wc -l
+   94  man -k user
+   95  man -k user | grep 8
+   96  man -k sander
+   97  man man
+   98  man apropos
+   99  man mandb
+  100  mandb
+  101  sudo mandb
+  102  counter 3
+  103  man -k hostname
+  104  man hostnamectl
+  105  lvcreate --help | less
+  106  counter 12
+  107  ls
+  108  ls -a
+  109  ls /etc/a*
+  110  ls -d /etc/a*
+  111  history | grep hostnamectl
+  112  ls /etc/??a*
+  113  ls -d /etc/??a*
+  114  ls -d /etc/??a[b-d]*
+  115  cd /usr/bin
+  116  ls
+  117  man ibus
+  118  cd
+  119  pwd
+  120  mkdir files
+  121  ls
+  122  rmdir files/
+  123  mkdir files
+  124  ls
+  125  mv test files/
+  126  ls
+  127  ls files/
+  128  rmdir files/
+  129  rm -r files/
+  130  history
+  131  ls /
+  132  man hier
+  133  ls /var/log/
+  134  ls -l /var/log/
+  135  less /var/log/messages
+  136  sudo less /var/log/messages
+  137  ls /etc
+  138  less passwd
+  139  less /etc/passwd
+  140  less /etc/updatedb.conf 
+  141  man -k updatedb
+  142  man updatedb
+  143  pwd
+  144  cd ..
+  145  touch hello
+  146  cd
+  147  cd /proc
+  148  ls
+  149  cat cpuinfo 
+  150  cat meminfo 
+  151  cd /dev
+  152  ls
+  153  cd
+  154  cd /var/log
+  155  sudo tail /var/log/messages 
+  156  sudo ls -l messages 
+  157  cd ..
+  158  ls -l log/messages 
+  159  cd cache/
+  160  ls -l ../log/messages 
+  161  cd
+  162  ls
+  163  touch new
+  164  cp new Document
+  165  ls
+  166  rm Document
+  167  cp new Document/
+  168  ls
+  169  mv new newer
+  170  mv newer Documents/
+  171  ls
+  172  cp -a .* Documents/
+  173  ls -a Documents/
+  174  cp -R /etc .
+  175  ls
+  176  tree etc/
+  177  counter 5
+  178  cp --help | less
+  179  mkdir /tmp/trash
+  180  cp -a .* /tmp/trash
+  181  cp -R * /tmp/trash
+  182  tree /tmp/trash
+  183  cp -R /tmp .
+  184  ls
+  185  pwd
+  186  history
+  187  history > /tmp/1may25.txt
