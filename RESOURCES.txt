@@ -7,7 +7,7 @@ Mastering Systemd: https://learning.oreilly.com/live-events/mastering-systemd/06
 
 Recorded courses
 Virtualization for Everyone: https://learning.oreilly.com/course/virtualization-for-everyone/9780135338698/
-Linux Fundamentals: https://learning.oreilly.com/course/linux-fundamentals-2nd/9780137929313/
+Linux Fundamentals: https://learning.oreilly.com/course/linux-fundamentals-3rd/9780135465363/
 Bash Scripting: https://learning.oreilly.com/course/bash-shell-scripting/9780137689064/
 RHCSA: https://learning.oreilly.com/course/red-hat-certified/9780137931521/
 LFCS: https://learning.oreilly.com/course/linux-foundation-certified/9780138230678/
