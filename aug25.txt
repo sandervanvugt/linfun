@@ -1,0 +1,198 @@
+    1  sudo -i
+    2  nano countdown
+    3  echo $SHELL
+    4  countdown
+    5  pwd
+    6  echo $PATH
+    7  ./countdown
+    8  chmod +x countdown 
+    9  ./countdown 
+   10  ./countdown 12
+   11  cat countdown 
+   12  echo $(( 3 * 15 ))
+   13  nano hello
+   14  hello
+   15  echo $PATH
+   16  ./hello
+   17  ls -l hello
+   18  chmod +x hello 
+   19  ls -l hello
+   20  ./hello 
+   21  cat countdown 
+   22  export PATH=$PATH:.
+   23  echo $PATH
+   24  hello
+   25  exit
+   26  echo $PATH
+   27  history
+   28  echo hello
+   29  echo $(( 2 -1 ))
+   30  $(( 2 -1 ))
+   31  ls -l hello
+   32  chmod -x hello
+   33  ls -l hello
+   34  chmod +x hello 
+   35  top
+   36  sudo systemctl isolate multi-user.target
+   37  top
+   38  sudo systemctl isolate graphical.target
+   39  history
+   40  ls -l /etc/shadow
+   41  ls -l /etc/passwd
+   42  sudo cat /etc/shadow
+   43  ls -l /etc/shadow
+   44  sudo cat /etc/shadow
+   45  sudo chmod 755 /etc/shadow
+   46  ls -l /etc/shadow
+   47  cat /etc/shadow
+   48  sudo chmod 000 /etc/shadow
+   49  ls -l /etc/shadow
+   50  sudo chmod 400 /etc/shadow
+   51  ls -l /etc/shadow
+   52  whoami
+   53  cat /etc/shadow
+   54  sudo cat /etc/shadow
+   55  id
+   56  ls -l /root
+   57  sudo ls -l /root
+   58  man pwd
+   59  pwd
+   60  sudo -i
+   61  history
+   62  ssh student@192.168.29.147
+   63  ssh student@192.168.29.146
+   64  history
+   65  ./countdown 12
+   66  ps aux
+   67  ps aux | wc -l
+   68  ps aux | grep ssh
+   69  LS
+   70  ls
+   71  ls --help 
+   72  ls --help | less
+   73  sudo netstat -tulpen
+   74  netstat --help | less
+   75  netstat --help 
+   76  man netstat
+   77  cd /etc
+   78  ls -lrt
+   79  man resolv.conf
+   80  cd
+   81  cd--
+   82  cd -
+   83  ls-l
+   84  ls -l
+   85  cd --
+   86  cd --help | less
+   87  pwd
+   88  cd ..
+   89  cd
+   90  history
+   91  whoami
+   92  hostname
+   93  date
+   94  uname
+   95  uname --help
+   96  uname -r
+   97  arch
+   98  passwd
+   99  sudo passwd root
+  100  touch afile
+  101  ls 
+  102  ls -l
+  103  cd ..
+  104  touch afile
+  105  ls -l .
+  106  ls -ld .
+  107  cd
+  108  ls
+  109  file afile 
+  110  file hello
+  111  ls -l /bin/sh
+  112  last
+  113  history
+  114  man ls
+  115  man useradd
+  116  history
+  117  man man
+  118  man -k password
+  119  man man
+  120  man apropos
+  121  man mandb
+  122  sudo mandb
+  123  man -k password
+  124  man -k password | grep 8
+  125  man -k password | grep 1
+  126  lvcreate --help | less
+  127  ./countdown 13
+  128  ls
+  129  ls -a
+  130  cd /etc
+  131  ls f*
+  132  ls -d f*
+  133  ls -dl f*
+  134  cd
+  135  cd -
+  136  ls -d ..a*
+  137  ls -d ..s*
+  138  ls ..s*
+  139  ls -d ??s*
+  140  ls -d [a-d]??s*
+  141  history
+  142  cd
+  143  mkdir myfiles
+  144  ls
+  145  cp afile myfiles/
+  146  rmdir myfiles/
+  147  rm -rf myfiles/
+  148  echo $?
+  149  ls jkghfyuftyfyufg
+  150  echo $?
+  151  man hier
+  152  cd /
+  153  ls
+  154  cd /usr
+  155  ls
+  156  cd bin
+  157  ls
+  158  cd ../sbin
+  159  ls
+  160  cd /
+  161  ls
+  162  cd /var/log/
+  163  ls
+  164  ls -l
+  165  sudo less messages 
+  166  cd /etc
+  167  ls
+  168  cd /home
+  169  ls
+  170  touch hhh
+  171  cd student/
+  172  pwd
+  173  touch hhh
+  174  cd /tmp
+  175  touch hhh
+  176  ls -l
+  177  cd
+  178  ls -l
+  179  touch abcde
+  180  touch hello
+  181  ls -l
+  182  man touch
+  183  mkdir test
+  184  cd test
+  185  mkdir abc
+  186  mkdir def
+  187  mkdir ghi
+  188  mkdir jkl
+  189  touch jkl/file{1..9}
+  190  ls jkl
+  191  tree
+  192  rm -rf ./*
+  193  tree
+  194  sudo -i
+  195  cd
+  196  vtree
+  197  sudo dnf install -y git
+  198  history > /tmp/aug25.txt
