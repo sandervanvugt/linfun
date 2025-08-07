@@ -36,163 +36,467 @@
    36  sudo systemctl isolate multi-user.target
    37  top
    38  sudo systemctl isolate graphical.target
-   39  history
-   40  ls -l /etc/shadow
-   41  ls -l /etc/passwd
-   42  sudo cat /etc/shadow
+   39  countdown 12
+   40  countdown 9
+   41  countdown 12
+   42  history
    43  ls -l /etc/shadow
-   44  sudo cat /etc/shadow
-   45  sudo chmod 755 /etc/shadow
+   44  ls -l /etc/passwd
+   45  sudo cat /etc/shadow
    46  ls -l /etc/shadow
-   47  cat /etc/shadow
-   48  sudo chmod 000 /etc/shadow
+   47  sudo cat /etc/shadow
+   48  sudo chmod 755 /etc/shadow
    49  ls -l /etc/shadow
-   50  sudo chmod 400 /etc/shadow
-   51  ls -l /etc/shadow
-   52  whoami
-   53  cat /etc/shadow
-   54  sudo cat /etc/shadow
-   55  id
-   56  ls -l /root
-   57  sudo ls -l /root
-   58  man pwd
-   59  pwd
-   60  sudo -i
-   61  history
-   62  ssh student@192.168.29.147
-   63  ssh student@192.168.29.146
+   50  cat /etc/shadow
+   51  sudo chmod 000 /etc/shadow
+   52  ls -l /etc/shadow
+   53  sudo chmod 400 /etc/shadow
+   54  ls -l /etc/shadow
+   55  whoami
+   56  cat /etc/shadow
+   57  sudo cat /etc/shadow
+   58  id
+   59  ls -l /root
+   60  sudo ls -l /root
+   61  man pwd
+   62  pwd
+   63  sudo -i
    64  history
-   65  ./countdown 12
-   66  ps aux
-   67  ps aux | wc -l
-   68  ps aux | grep ssh
-   69  LS
-   70  ls
-   71  ls --help 
-   72  ls --help | less
-   73  sudo netstat -tulpen
-   74  netstat --help | less
-   75  netstat --help 
-   76  man netstat
-   77  cd /etc
-   78  ls -lrt
-   79  man resolv.conf
-   80  cd
-   81  cd--
-   82  cd -
-   83  ls-l
-   84  ls -l
-   85  cd --
-   86  cd --help | less
-   87  pwd
-   88  cd ..
-   89  cd
-   90  history
-   91  whoami
-   92  hostname
-   93  date
-   94  uname
-   95  uname --help
-   96  uname -r
-   97  arch
-   98  passwd
-   99  sudo passwd root
-  100  touch afile
-  101  ls 
-  102  ls -l
-  103  cd ..
-  104  touch afile
-  105  ls -l .
-  106  ls -ld .
-  107  cd
-  108  ls
-  109  file afile 
-  110  file hello
-  111  ls -l /bin/sh
-  112  last
-  113  history
-  114  man ls
-  115  man useradd
+   65  ssh student@192.168.29.147
+   66  ssh student@192.168.29.146
+   67  history
+   68  ./countdown 12
+   69  ps aux
+   70  ps aux | wc -l
+   71  ps aux | grep ssh
+   72  LS
+   73  ls
+   74  ls --help 
+   75  ls --help | less
+   76  sudo netstat -tulpen
+   77  netstat --help | less
+   78  netstat --help 
+   79  man netstat
+   80  cd /etc
+   81  ls -lrt
+   82  man resolv.conf
+   83  cd
+   84  cd--
+   85  cd -
+   86  ls-l
+   87  ls -l
+   88  cd --
+   89  cd --help | less
+   90  pwd
+   91  cd ..
+   92  cd
+   93  history
+   94  whoami
+   95  hostname
+   96  date
+   97  uname
+   98  uname --help
+   99  uname -r
+  100  arch
+  101  passwd
+  102  sudo passwd root
+  103  touch afile
+  104  ls 
+  105  ls -l
+  106  cd ..
+  107  touch afile
+  108  ls -l .
+  109  ls -ld .
+  110  cd
+  111  ls
+  112  file afile 
+  113  file hello
+  114  ls -l /bin/sh
+  115  last
   116  history
-  117  man man
-  118  man -k password
-  119  man man
-  120  man apropos
-  121  man mandb
-  122  sudo mandb
-  123  man -k password
-  124  man -k password | grep 8
-  125  man -k password | grep 1
-  126  lvcreate --help | less
-  127  ./countdown 13
-  128  ls
-  129  ls -a
-  130  cd /etc
-  131  ls f*
-  132  ls -d f*
-  133  ls -dl f*
-  134  cd
-  135  cd -
-  136  ls -d ..a*
-  137  ls -d ..s*
-  138  ls ..s*
-  139  ls -d ??s*
-  140  ls -d [a-d]??s*
-  141  history
-  142  cd
-  143  mkdir myfiles
-  144  ls
-  145  cp afile myfiles/
-  146  rmdir myfiles/
-  147  rm -rf myfiles/
-  148  echo $?
-  149  ls jkghfyuftyfyufg
-  150  echo $?
-  151  man hier
-  152  cd /
-  153  ls
-  154  cd /usr
-  155  ls
-  156  cd bin
-  157  ls
-  158  cd ../sbin
-  159  ls
-  160  cd /
-  161  ls
-  162  cd /var/log/
-  163  ls
-  164  ls -l
-  165  sudo less messages 
-  166  cd /etc
-  167  ls
-  168  cd /home
-  169  ls
-  170  touch hhh
-  171  cd student/
-  172  pwd
+  117  man ls
+  118  man useradd
+  119  history
+  120  man man
+  121  man -k password
+  122  man man
+  123  man apropos
+  124  man mandb
+  125  sudo mandb
+  126  man -k password
+  127  man -k password | grep 8
+  128  man -k password | grep 1
+  129  lvcreate --help | less
+  130  ./countdown 13
+  131  ls
+  132  ls -a
+  133  cd /etc
+  134  ls f*
+  135  ls -d f*
+  136  ls -dl f*
+  137  cd
+  138  cd -
+  139  ls -d ..a*
+  140  ls -d ..s*
+  141  ls ..s*
+  142  ls -d ??s*
+  143  ls -d [a-d]??s*
+  144  history
+  145  cd
+  146  mkdir myfiles
+  147  ls
+  148  cp afile myfiles/
+  149  rmdir myfiles/
+  150  rm -rf myfiles/
+  151  echo $?
+  152  ls jkghfyuftyfyufg
+  153  echo $?
+  154  man hier
+  155  cd /
+  156  ls
+  157  cd /usr
+  158  ls
+  159  cd bin
+  160  ls
+  161  cd ../sbin
+  162  ls
+  163  cd /
+  164  ls
+  165  cd /var/log/
+  166  ls
+  167  ls -l
+  168  sudo less messages 
+  169  cd /etc
+  170  ls
+  171  cd /home
+  172  ls
   173  touch hhh
-  174  cd /tmp
-  175  touch hhh
-  176  ls -l
-  177  cd
-  178  ls -l
-  179  touch abcde
-  180  touch hello
+  174  cd student/
+  175  pwd
+  176  touch hhh
+  177  cd /tmp
+  178  touch hhh
+  179  ls -l
+  180  cd
   181  ls -l
-  182  man touch
-  183  mkdir test
-  184  cd test
-  185  mkdir abc
-  186  mkdir def
-  187  mkdir ghi
-  188  mkdir jkl
-  189  touch jkl/file{1..9}
-  190  ls jkl
-  191  tree
-  192  rm -rf ./*
-  193  tree
-  194  sudo -i
-  195  cd
-  196  vtree
-  197  sudo dnf install -y git
-  198  history > /tmp/aug25.txt
+  182  touch abcde
+  183  touch hello
+  184  ls -l
+  185  man touch
+  186  mkdir test
+  187  cd test
+  188  mkdir abc
+  189  mkdir def
+  190  mkdir ghi
+  191  mkdir jkl
+  192  touch jkl/file{1..9}
+  193  ls jkl
+  194  tree
+  195  rm -rf ./*
+  196  tree
+  197  sudo -i
+  198  cd
+  199  vtree
+  200  sudo dnf install -y git
+  201  history > /tmp/aug25.txt
+  202  ip a
+  203  git clone https://github.com/sandervanvugt/linfun
+  204  ls linfun/
+  205  ls -l /var/log/messages
+  206  pwd
+  207  ls ../../var/log/messages 
+  208  cd /var
+  209  ls -l log/messages 
+  210  cd cache/
+  211  ls ../log/messages 
+  212  cd
+  213  echo $PATH
+  214  cp countdown /usr/local/bin/
+  215  ls -ld /usr/local/bin
+  216  sudo cp countdown /usr/local/bin/
+  217  ls -a
+  218  cp -a .* /tmp/
+  219  ls /tmp
+  220  ls -a /tmp
+  221  ls
+  222  mv afile bfile
+  223  ls
+  224  mv bfile /tmp/
+  225  ls
+  226  mkdir dir{a..f}
+  227  ls
+  228  vim dira/setup.sh
+  229  cd dirb
+  230  ln ../dira/setup.sh 
+  231  cd ../dirc
+  232  ln ../dira/setup.sh 
+  233  cd ..
+  234  cd -
+  235  cd dird
+  236  cd ..
+  237  cd dird
+  238  ln ../dira/setup.sh 
+  239  cd ..
+  240  ls -li d*/setup.sh
+  241  vim dirc/setup.sh 
+  242  ls -li d*/setup.sh
+  243  findmnt /
+  244  sudo findmnt 
+  245  ls -l /boot
+  246  sudo ln /boot/vmlinuz-6.12.0-35.el10.aarch64 ./kernel
+  247  sudo ln -s /boot/vmlinuz-6.12.0-35.el10.aarch64 ./kernel
+  248  ls
+  249  ls -l kernel 
+  250  cd /
+  251  ls -l
+  252  cd
+  253  cp /etc/hosts .
+  254  ls -il hosts
+  255  ln -s hosts symhosts
+  256  ls -il hosts symhosts
+  257  rm hosts
+  258  ls -il hosts symhosts
+  259  cat symhosts 
+  260  echo hello > hosts
+  261  ls -il hosts symhosts
+  262  history
+  263  find / -name "hosts"
+  264  find / -name "hosts" 2 > /dev/null
+  265  find / -name "hosts" 2> /dev/null
+  266  find / -name "*hosts*" 2> /dev/null
+  267  sudo useradd linda
+  268  find / -user linda 2>/dev/null
+  269  find / -user linda -type f 2>/dev/null
+  270  find / -size +200M 2>/dev/null
+  271  sudo find / -user linda -type f -exec cp {} /root/ \;
+  272  sudo ls -l /root/
+  273  history
+  274  sudo tar -cvf etc.tar /etc
+  275  ls
+  276  ls -l etc.tar
+  277  sudo tar -czvf etc.tar.gz /etc
+  278  ls -l etc*
+  279  sudo tar -cjvf etc.tar.bz2 /etc
+  280  sudo tar -cJvf etc.tar.xz /etc
+  281  ls etc*
+  282  ls -l etc*
+  283  mv etc.tar.xz etc
+  284  ls -l
+  285  file etc
+  286  tar -tvf etc
+  287  tar -xvf etc
+  288  ls
+  289  tree etc
+  290  history
+  291  countdown 10
+  292  history
+  293  mkdir -p /tmp/files/pictures /tpm/files/photos /tmp/files/videos
+  294  mkdir -p /tmp/files/pictures /tmp/files/photos /tmp/files/videos
+  295  cd /tmp/files
+  296  cp /etc/[abc]* .
+  297  mv [ab]* photos/
+  298  ls
+  299  mv c* videos/
+  300  man find
+  301  find /etc -size -n -1000c
+  302  find /etc -size -1000c
+  303  find /etc -size -1000c -exec cp {} pictures/ \;
+  304  ls -l pictures/
+  305  ln -s /var .
+  306  ls
+  307  sudo tar -czvf home.tar.gz /home
+  308  ls
+  309  cd ..
+  310  cd -
+  311  mkdir ../archive
+  312  tar -xvf home.tar.gz -C ../archive
+  313  ls -l ../archive/
+  314  history
+  315  which vi
+  316  ls -l $(which vi)
+  317  ls -l $(which vim)
+  318  less /usr/bin/vi
+  319  cd
+  320  vim mynewfile
+  321  vimtutor
+  322  less /etc/passwd
+  323  more /etc/passwd
+  324  head /etc/passwd
+  325  head -n 3 /etc/passwd
+  326  tail -n 3 /etc/passwd
+  327  head -n 5 /etc/passwd | tail -1
+  328  cat .bashrc
+  329  tac .bashrc
+  330  cd /etc
+  331  sudo grep root *
+  332  sudo grep root * 2>/dev/null
+  333  ps aux
+  334  ps aux | grep ssh
+  335  sudo grep -il root * 2>/dev/null
+  336  sudo dnf install httpd -y
+  337  grep -i documentroot /etc/httpd/conf/httpd.conf 
+  338  grep -i -A 10 documentroot /etc/httpd/conf/httpd.conf 
+  339  grep -i -B 5 documentroot /etc/httpd/conf/httpd.conf 
+  340  grep -i -C 5 documentroot /etc/httpd/conf/httpd.conf 
+  341  ps aux | grep http
+  342  echo $?
+  343  ps aux | grep http | grep -v grep
+  344  echo $?
+  345  historu
+  346  history
+  347  grep 'a*' a*
+  348  man 7 regex
+  349  cd
+  350  cd linfun/
+  351  ls
+  352  cat regex 
+  353  grep '^l' regex 
+  354  grep 'anna$' regex 
+  355  grep '^.$' regex 
+  356  grep '^lea\b' regex 
+  357  grep 'n.*x' regex 
+  358  grep 'bi+t' regex 
+  359  grep -E 'bi+t' regex 
+  360  grep -E 'bi?t' regex 
+  361  grep 'bon\{3\}nen' regex 
+  362  grep '\banna\b' regex 
+  363  arch
+  364  sudo grep -E '(wvm | vmx )' /proc/cpuinfo 
+  365  cat /proc/cpuinfo 
+  366  sudo grep -E '(anna | bob )' regex 
+  367  sudo grep -E '(anna | bob)' regex 
+  368  sudo grep -E 'anna | bob' regex 
+  369  cat /etc/passwd
+  370  cut -d : -f 1 /etc/passwd
+  371  cut -d : -f 1 /etc/passwd | sort
+  372  echo hello
+  373  echo hello | tr [a-z] [A-Z]
+  374  echo hello | tr [:lower:] [:upper:]
+  375  history
+  376  awk '{ print $0 }' /etc/passwd
+  377  awk '{ print $1 }' /etc/passwd
+  378  awk -F : '{ print $1 }' /etc/passwd
+  379  awk -F : '{ print $4 }' /etc/passwd
+  380  awk -F : '/linda/ { print $4 }' /etc/passwd
+  381  awk 'length($1) > 40' /etc/passwd
+  382  sort -t : -k3,3n /etc/passwd
+  383  history
+  384  grep -E 'linda|bob' regex 
+  385  grep -E '(linda|bob)' regex 
+  386  grep -E '( linda | bob )' regex 
+  387  head -5 /etc/passwd | tail -1
+  388  sed -n 5 /etc/passwd
+  389  sed -n5 /etc/passwd
+  390  sed -n 5p /etc/passwd
+  391  ps aux | awk '{ print $1 }'
+  392  grep -l '^root' /etc/*
+  393  grep -l '^root' /etc/* 2>/dev/null
+  394  grep -l '^...$' /etc/* 2>/dev/null
+  395  grep '^...$' /etc/* 2>/dev/null
+  396  grep '\blea\b' regex 
+  397  grep '\balex\b' regex 
+  398  grep -R '\balex\b' /etc/* 2>/dev/null
+  399  sort < /etc/services 
+  400  sort /etc/services 
+  401  alias dir='ls -l'
+  402  dir
+  403  echo "alias dir='ls -l'"
+  404  echo "alias dir='ls -l'" >> ~/.bashrc
+  405  cat ~/.bashrc
+  406  cd
+  407  grep root /etc/* 2>rge.txt
+  408  cat rge.txt 
+  409  grep root /etc/* &>rge.txt
+  410  ps aux | tee psfile | grep ssh
+  411  cat psfile 
+  412  history
+  413  sudo reboot
+  414  ls -al .bash*
+  415  env | grep HIST
+  416  history | grep linda
+  417  sudo grep linda /etc/shadow
+  418  sudo sh -c "echo password | passwd --stdin linda"
+  419  sudo grep linda /etc/shadow
+  420  history
+  421  history -d 414
+  422  history
+  423  mJQZa9OnSSyqhQmM9D49W1
+  424  history
+  425  sudo grep linda /etc/shadow
+  426  for i in {400..450} do echo $i; done
+  427  for i in {400..450}; do echo $i; done
+  428  for i in {400..450}; do echo history -d $i; done
+  429  ip address add --help
+  430  ip address add -h
+  431  ip address add 10.0.0.10/24 
+  432  ip address add 10.0.0.10/24 dev ens160 
+  433  sudo ip address add 10.0.0.10/24 dev ens160 
+  434  ifconfig
+  435  man ifconfig 
+  436  cat /etc/os-release 
+  437  which ip
+  438  env
+  439  echo $SHELL
+  440  echo $USER
+  441  sleep infinity
+  442  sleep infinity &
+  443  sudo vim /etc/profile
+  444  cd /etc/profile.d/
+  445  ls
+  446  cd
+  447  vim .bashrc 
+  448  vim .bash_logout 
+  449  jobs
+  450  fg
+  451  bg
+  452  fg
+  453  ps aux | less
+  454  sudo dd if=/dev/zero of=/dev/null &
+  455  password
+  456  dd if=/dev/zero of=/dev/null &
+  457  ps aux | grep dd
+  458  kill 8170
+  459  countdown 12
+  460  top
+  461  sudo -i
+  462  sudo id linda
+  463  touch abcdf
+  464  ls -l abcdf
+  465  i
+  466  id
+  467  usermod --help 
+  468  sudo usermod -aG wheel linda
+  469  id linda
+  470  sudo useradd anna
+  471  sudo groupadd sales
+  472  sudo usermod -aG sales anna
+  473  sudo usermod -aG sales linda
+  474  id anna
+  475  sudo mkdir /data/sales
+  476  sudo mkdir -p /data/sales
+  477  sudo ls -ld /data/sales
+  478  sudo chgrp sales /data/sales
+  479  sudo ls -ld /data/sales
+  480  sudo chmod 770 /data/sales
+  481  sudo ls -ld /data/sales
+  482  history
+  483  ip a
+  484  ping nu.nl
+  485  sudo dnf install -y netcat
+  486  sudo dnf install -y nc
+  487  sudo nc 192.168.29.2 80
+  488  sudo nc nu.nl 443
+  489  lsblk
+  490  sudo mount /dev/sda1 /mnt
+  491  mount
+  492  ls /mnt
+  493  cd /mnt
+  494  sudo umount /mnt
+  495  lsof /mnt
+  496  cd
+  497  sudo umount /mnt
+  498  sudo journalctl
+  499  cd linfun/
+  500  ls
+  501  cat RESOURCES.txt 
+  502  history > /tmp/aug25.txt
