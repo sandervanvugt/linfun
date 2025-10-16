@@ -1,0 +1,41 @@
+    1  vim countdown
+    2  chmod +x countdown
+    3  ./countdown 14
+    4  ls
+    5  echo $SHELL
+    6  pwd
+    7  nano countdown 
+    8  vim countdown 
+    9  history
+   10  vim countdown 
+   11  chmod -x countdown 
+   12  ls -l countdown 
+   13  countdown 14
+   14  echo $PATH
+   15  pwd
+   16  ./countdown 14
+   17  chmod +x countdown 
+   18  ls -l countdown 
+   19  ./countdown 14
+   20  ./countdown 1
+   21  ls -l countdown 
+   22  history
+   23  ./countdown 1
+   24  history
+   25  history > /tmp/oct-25.txt
+   26  countdown
+   27  ls -l countdown 
+   28  chmod -x countdown 
+   29  ls -l countdown 
+   30  chmod +x countdown 
+   31  ls -l countdown 
+   32  chmod --help
+   33  sudo hostnamectl hostname linfun1
+   34  cat /etc/hostname 
+   35  exit
+   36  cd
+   37  ./countdown 12
+   38  sudo /etc/hosts
+   39  sudo vim /etc/hosts
+   40  sudo dnf install -y git
+   41  history > /tmp/oct-25.txt
