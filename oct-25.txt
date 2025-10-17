@@ -39,3 +39,320 @@
    39  sudo vim /etc/hosts
    40  sudo dnf install -y git
    41  history > /tmp/oct-25.txt
+    1  vim countdown
+    2  chmod +x countdown
+    3  ./countdown 14
+    4  ls
+    5  echo $SHELL
+    6  pwd
+    7  nano countdown 
+    8  vim countdown 
+    9  history
+   10  vim countdown 
+   11  chmod -x countdown 
+   12  ls -l countdown 
+   13  countdown 14
+   14  echo $PATH
+   15  pwd
+   16  ./countdown 14
+   17  chmod +x countdown 
+   18  ls -l countdown 
+   19  ./countdown 14
+   20  ./countdown 1
+   21  ls -l countdown 
+   22  history
+   23  ./countdown 1
+   24  history
+   25  history > /tmp/oct-25.txt
+   26  countdown
+   27  ls -l countdown 
+   28  chmod -x countdown 
+   29  ls -l countdown 
+   30  chmod +x countdown 
+   31  ls -l countdown 
+   32  chmod --help
+   33  sudo hostnamectl hostname linfun1
+   34  cat /etc/hostname 
+   35  exit
+   36  cd
+   37  ./countdown 12
+   38  sudo /etc/hosts
+   39  sudo vim /etc/hosts
+   40  sudo dnf install -y git
+   41  history > /tmp/oct-25.txt
+   42  ip a
+   43  git clone https://github.com/sandervanvugt/linfun
+   44  ssh 192.168.29.140
+   45  cd /var
+   46  ls
+   47  ls log
+   48  ls -l log
+   49  sudo cat log/messages 
+   50  sudo cat /var/log/messages 
+   51  cd cache/
+   52  sudo tail /var/log/messages
+   53  sudo tail ../log/messages 
+   54  cat ../../etc/hosts
+   55  cat /etc/hosts
+   56  cd
+   57  cp /etc/hosts /tmp
+   58  sudo cp /etc/hosts /mydirectory
+   59  ls -l /mydirectory 
+   60  rm /mydirectory 
+   61  sudo rm /mydirectory 
+   62  sudo cp /etc/hosts /mydirectory/
+   63  sudo mkdir /mydirectory
+   64  cp -a ~/.* /tmp
+   65  ls -a /tmp
+   66  ls
+   67  mv myfile /tmp
+   68  ls -l /tmp/my*
+   69  mv /tmp/myfile /tmp/yourfile
+   70  mkdir /tmp/trash
+   71  cp -aR . /tmp/trash/
+   72  cp -R /tmp .
+   73  ls
+   74  cp /etc/hosts .
+   75  ls -il hosts
+   76  mkdir new
+   77  ln hosts new/hosts
+   78  ls -il hosts new/hosts
+   79  echo hello >> hosts
+   80  ls -il hosts new/hosts
+   81  ln -s hosts new/symhosts
+   82  ls -il hosts new/hosts new/symhosts 
+   83  ls -l /boot
+   84  sudo ln /boot/vmlinuz-6.12.0-43.el10.aarch64 kernel
+   85  lsblk
+   86  sudo ln -s /boot/vmlinuz-6.12.0-43.el10.aarch64 kernel
+   87  ls -l
+   88  cd /
+   89  ls
+   90  ls -l
+   91  ls
+   92  cd
+   93  ls -l
+   94  find / -name "hosts"
+   95  find / -name "hosts" 2>/dev/null
+   96  find / -name "*hosts*" 2>/dev/null
+   97  history
+   98  find / -name "*hosts*" -type f 2>/dev/null
+   99  sudo tail /etc/passwd
+  100  sudo find / -user "anna"
+  101  sudo find / -user "anna" -type f
+  102  sudo find / -user "anna" -type f 2>/dev/null
+  103  sudo find / -size +200M
+  104  sudo find / -size +200M -exec ls -l {} \;
+  105  sudo mkdir /root/anna ; sudo find -user anna -exec cp {} /root/anna \;
+  106  ls ; who
+  107  ls gjggug ; who
+  108  ls gjggug && who
+  109  ls gjggug || who
+  110  ls mydir && ls -l mydir
+  111  ls mydir || mkdir mydir
+  112  ls mydir && ls -l mydir
+  113  ls mydir && ls -ld mydir
+  114  ls
+  115  echo $?
+  116  ls jyguyfuyfyt
+  117  echo $?
+  118  history
+  119  sudo find / -size +200M | ls -l
+  120  sudo find / -size +200M -exec ls -l {} \;
+  121  sudo tar -cvf myarchive.tar /etc
+  122  ls -l myarchive.tar 
+  123  sudo tar -czvf myarchive.tar.gz /etc
+  124  ls -l myar*
+  125  time sudo tar -cjvf myarchive.tar.gz /etc
+  126  time sudo tar -czvf myarchive.tar.gz /etc
+  127  time sudo tar -cjvf myarchive.tar.bz2 /etc
+  128  history
+  129  ls -l mya*
+  130  time sudo tar -cJvf myarchive.tar.xz /etc
+  131  ls -l mya*
+  132  tar -tvf myarchive.tar.xz
+  133  mkdir extract
+  134  tar -xvf myarchive.tar.xz -C extract/
+  135  ls extract/
+  136  history
+  137  mkdir /tmp/files/pictures
+  138  mkdir -p /tmp/files/pictures
+  139  cd /tmp/files/
+  140  mkdir photos videos
+  141  cp /etc/[a-c]* .
+  142  mv [ab]* photos/
+  143  mv c* videos/
+  144  ls
+  145  man find
+  146  find /etc -size -1000c
+  147  find /etc -size -1000c -exec cp {} pictures/
+  148  find /etc -size -1000c -exec cp {} pictures/ \;
+  149  ls pictures/
+  150  ln -s /var .
+  151  ls
+  152  tar -czvf home.tgz /home
+  153  ls
+  154  ls -l home.tgz 
+  155  sudo tar -czvf home.tgz /home
+  156  mkdir ../archive
+  157  sudo tar -xvf home.tgz -C ../archive/
+  158  history
+  159  ssh 192.168.29.140
+  160  cd
+  161  vim myfile
+  162  cat myfile 
+  163  vim myfile
+  164  vimtutor
+  165  cd linfun/
+  166  ls
+  167  cat countdown 
+  168  tac countdown 
+  169  sudo less /var/log/messages
+  170  sudo more /var/log/messages
+  171  sudo tail /var/log/messages 
+  172  sudo tail -f /var/log/messages 
+  173  sudo head -5 /var/log/messages 
+  174  sudo head -999 /var/log/messages | tail -1
+  175  grep anna regex 
+  176  ps aux | grep ssh
+  177  grep anna -i regex 
+  178  ps aux | grep whatever || echo whatever is not running
+  179  ps aux | grep whatever | grep -v grep || echo whatever is not running
+  180  ps faux
+  181  ps faux | grep -B 5 faux
+  182  ps faux | grep -A 5 bash 
+  183  grep -R root /etc/*
+  184  grep -Rl root /etc/*
+  185  cat regex 
+  186  grep '^l' regex 
+  187  grep 'anna$' regex 
+  188  grep '^.$' regex 
+  189  grep '^.' regex 
+  190  grep 'lea' regex 
+  191  grep 'lea\b' regex 
+  192  grep 'n.*x' regex 
+  193  grep '..*[:space:]..*' regex 
+  194  grep '..*[[:space:]]..*' regex 
+  195  grep 'bi+t' regex 
+  196  grep -E 'bi+t' regex 
+  197  egrep 'bi+t' regex 
+  198  grep -E 'bi?t' regex 
+  199  grep 'bon\{3\}nen' regex 
+  200  grep '\banna\b' regex 
+  201  grep -e anna -e bananna regex 
+  202  grep -e anna -e nix regex 
+  203  ps aux | grep -e ssh -e cron
+  204  history
+  205  awk '{ print $1 }' /etc/passwd
+  206  awk -F : '{ print $1 }' /etc/passwd
+  207  tail /etc/passwd
+  208  awk -F : '/anna/ { print $3 }' /etc/passwqd
+  209  awk -F : '/anna/ { print $3 }' /etc/passwd
+  210  awk -F : 'length($1) > 10 { print $3 }' /etc/passwd
+  211  sort -t : -k3,3n /etc/passwd
+  212  sed -n 5p /etc/passwd
+  213  sed -i s/anna/onno/g regex
+  214  cat regex 
+  215  sed -i '/linda/s/^/#/' regex 
+  216  cat regex 
+  217  sed  -i -e '2d' regex 
+  218  sort /etc/services
+  219  grep -R root /etc &> myfile
+  220  grep -R root /etc &> /dev/null
+  221  sudo useradd linda
+  222  sudo sh -c "echo password | passwd --stdin linda"
+  223  history
+  224  history -d 221
+  225  tail /etc/passwd
+  226  cd
+  227  ls -a
+  228  less .bash_history 
+  229  echo $HISTSIZE
+  230  echo $HISTFILESIZE
+  231  echo $HISTFILESIZE 
+  232  touch oihoihiuguyfuyftyfuyguigihihgiugiu
+  233  rm oihoihiuguyfuyftyfuyguigihihgiugiu 
+  234  ip addr add --help
+  235  ip addr add -h
+  236  ip addr add help
+  237  sudo dnf install bash-completion
+  238  env
+  239  echo $SHELL
+  240  echo $USER
+  241  echo $PATH
+  242  countdown
+  243  cp countdown /usr/local/bin
+  244  ls -ld /usr/local/bin
+  245  sudo cp countdown /usr/local/bin
+  246  ps aux | grep cron
+  247  alias
+  248  alias helpme=man 
+  249  helpme ls
+  250  sleep 1000
+  251  cat /etc/environment 
+  252  vim /etc/profile
+  253  ls /etc/profile.d/
+  254  vim /etc/bashrc
+  255  vim .bashrc 
+  256  sudo dnf install httpd
+  257  rpm -ql httpd
+  258  rpm -qc httpd
+  259  sudo vim /etc/hosts
+  260  sudo dnf install -y vsftpd
+  261  sudo -i
+  262  ip a
+  263  ping nu.nl
+  264  ifconfig
+  265  man ifconfig
+  266  sudo lsblk
+  267  cd /run/media/student/RHEL-9-4-BaseOS-x86_64/
+  268  ls
+  269  cd
+  270  sudo mount /dev/sda /mnt
+  271  ls /mnt
+  272  sudo umount /dev/sda
+  273  cd linfun/
+  274  ls
+  275  less RESOURCES.txt 
+  276  history >> /tmp/oct-25.txt 
+ROOT COMMANDS
+    1  pwd
+    2  ls -ld .
+    3  cp /etc/hosts .
+    4  ls -l /etc/shadow
+    5  cat /etc/shadow
+    6  ls -l /etc/shadow
+    7  ls -ld .
+    8  exit
+    9  lsblk
+   10  ls -l /dev/sr0
+   11  #dd if=/dev/sr0 of=/rhel10.iso bs=1M
+   12  df -h
+   13  dd if=/dev/sr0 of=/rhel10.iso bs=1M
+   14  dd if=/dev/zero of=/dev/null
+   15  bg
+   16  jobs
+   17  top
+   18  man topas
+   19  man -k topas
+   20  dnf provides */topas
+   21  ps aux
+   22  id anna
+   23  su - anna
+   24  usermod -aG wheel anna
+   25  id anna
+   26  su - anna
+   27  groupadd sales
+   28  usermod -aG sales anna
+   29  mkdir -p /data/sales
+   30  cd /data
+   31  ls -l
+   32  chgrp sales sales
+   33  ls -l
+   34  chmod 770 sales
+   35  ls -l
+   36  id anna
+   37  su - anna
+   38  exit
+   39  echo ROOT COMMANDS >> /tmp/oct-25.txt 
+   40  history >> /tmp/oct-25.txt 
