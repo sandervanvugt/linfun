@@ -1,0 +1,167 @@
+    1  sudo chvt 4
+    2  ls -l /root
+    3  sudo ls -l /root
+    4  whoami
+    5  id
+    6  nano counter
+    7  counter
+    8  ls
+    9  echo $PATH
+   10  ./counter
+   11  ls -l counter
+   12  whoami
+   13  chmod +x counter 
+   14  ls -l counter
+   15  ./counter
+   16  ./counter 13
+   17  cat counter 
+   18  ./counter 13
+   19  history
+   20  cat counter 
+   21  echo hello
+   22  counter 1
+   23  echo $PATH
+   24  cp counter /usr/local/bin
+   25  ls -ld /usr/local/bin
+   26  sudo cp counter /usr/local/bin
+   27  counter 
+   28  history
+   29  echo $SHELL
+   30  ls -l 
+   31  ls -l > outfile
+   32  ls -l
+   33  cat outfile 
+   34  who > outfile 
+   35  cat outfile 
+   36  ls -l >> outfile
+   37  cat outfile 
+   38  grep root /etc/*
+   39  grep root /etc/* 2>/dev/null
+   40  grep root /etc/* 2>/dev/null > grep-out
+   41  cat grep-out 
+   42  grep root /etc/* &> whatever
+   43  ps 
+   44  ps aux
+   45  ps aux | grep ssh
+   46  ps aux | tee psfile | grep ssh
+   47  cat psfile 
+   48  ps aux | tee psfile | grep ssh
+   49  history
+   50  ls -l
+   51  ls
+   52  ls -l
+   53  ls --help
+   54  ls --help | less
+   55  ls -h
+   56  ls -hl
+   57  ls -l -r -t
+   58  ls -lrt
+   59  ls --help | less
+   60  ls -lrt /etc
+   61  man ls
+   62  sudo find / -size +100M
+   63  sudo find / -size +100M 2> /dev/null
+   64  ps aux | grep ssh
+   65  counter 1
+   66  sudo rpm -qa | grep man
+   67  whoami
+   68  sudo dnf install man-pages
+   69  history
+   70  sudo rpm -ql man-pages
+   71  ls /usr/share/man/man1
+   72  ls /usr/share/man/man1/ls*
+   73  sudo rpm -qf /usr/share/man/man1/ls.1.gz
+   74  counter 13
+   75  ls
+   76  history
+   77  man man
+   78  man semanage-fcontext
+   79  man -k password
+   80  man -k password | wc -l
+   81  man -k password | grep 1
+   82  man -k sander
+   83  man man
+   84  man apropos
+   85  man mandb
+   86  mandb
+   87  sudo mandb
+   88  history
+   89  man -k hostname
+   90  man hostname
+   91  hostname --help | less
+   92  hostnamectl hostname linfun.example.com
+   93  exit
+   94  lvcreate --help | less
+   95  sudo rpm -qa
+   96  sudo rpm -qa | wc -l
+   97  sudo dnf search nmap
+   98  sudo nano /etc/hosts
+   99  sudo dnf search nmap
+  100  sudo dnf install nmap
+  101  sudo dnf repolist
+  102  sudo dnf remove nmap
+  103  ssh 192.168.29.137
+  104  counter 13
+  105  pwd
+  106  ls
+  107  ls -a
+  108  ls -l /etc
+  109  ls -l /etc/y*
+  110  ls -ld /etc/y*
+  111  cd /etc
+  112  ls a*
+  113  ls -d a*
+  114  ls -d a??????*
+  115  ls -d a[ln]?????*
+  116  ls -d a[l-n]?????*
+  117  ls -d a[c-n]?????*
+  118  cd 
+  119  cd /etc
+  120  cd
+  121  mkdir newfiles
+  122  ls
+  123  rmdir newfiles/
+  124  cd /
+  125  ls
+  126  ls /usr
+  127  ls /var
+  128  ls /var/log
+  129  ls -l /var/log
+  130  ls /etc
+  131  touch caniwrite
+  132  ls -ld .
+  133  sudo touch yesican
+  134  sudo tail /var/log/messages
+  135  sudo tail -1 /var/log/messages
+  136  cd /var
+  137  sudo tail -1 /var/log/messages
+  138  sudo tail -1 log/messages
+  139  cd cache
+  140  sudo tail -1 ../log/messages
+  141  cd /sys
+  142  ls
+  143  cd bus
+  144  ls
+  145  cd cpu
+  146  ls 
+  147  cd ../me
+  148  cd
+  149  touch newfile
+  150  cp newfile /tmp/mydir
+  151  ls -l /tmp/mydir 
+  152  rm /tmp/mydir
+  153  cp newfile /tmp/mydir/
+  154  mkdir /tmp/mydir
+  155  cp newfile /tmp/mydir/
+  156  cp -a .* /tmp/mydir/
+  157  ls -al /tmp/mydir/
+  158  ls
+  159  cp -aR .* /tmp/mydir/
+  160  touch hello
+  161  mv hello goodbye
+  162  ls
+  163  mv goodbye /tmp
+  164  ls
+  165  ls /tmp/goodbye 
+  166  history 
+  167  history > /tmp/dec25
