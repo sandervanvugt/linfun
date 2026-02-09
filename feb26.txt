@@ -1,0 +1,135 @@
+    1  exit
+    2  sudo ls -l /etc/shadow
+    3  sudo ls -l /etc/passwd
+    4  sudo cat /etc/shadow
+    5  history
+    6  ls -l /etc/shadow
+    7  cat /etc/shadow
+    8  vim countdown
+    9  countdown 15
+   10  ./countdown 15
+   11  ls -l countdown 
+   12  chmod +x countdown 
+   13  ./countdown 15
+   14  history
+   15  nano countdown 
+   16  echo $PATH
+   17  pwd
+   18  ./countdown 
+   19  ls -l countdown 
+   20  ./countdown 1
+   21  vim countdown
+   22  history
+   23  nano countdown 
+   24  pwd
+   25  echo $PATH
+   26  countdown
+   27  ./countdown 
+   28  history
+   29  whoami
+   30  id
+   31  sudo ls -l /root
+   32  sudo useradd bob
+   33  ssh student@192.168.29.141
+   34  sudo vim /etc/ssh/sshd_config
+   35  sudo systemctl restart sshd
+   36  systemctl status sshd
+   37  firewall-cmd --list-all
+   38  ip a
+   39  ssh student@localhost
+   40  history
+   41  cat countdown 
+   42  countdown
+   43  echo $PATH
+   44  ls /usr/local/bin/
+   45  cp countdown /usr/local/bin
+   46  ls -ld /usr/local/bin
+   47  sudo cp countdown /usr/local/bin
+   48  ls -ld /usr/local/bin
+   49  ls -l /usr/local/bin
+   50  echo $SHELL
+   51  sudo chvt 3
+   52  history
+   53  ls -l
+   54  grep root /etc/*
+   55  grep root /etc/* 2>/dev/null
+   56  grep root /etc/* 2>/dev/null > output.txt
+   57  less output.txt 
+   58  grep root /etc/* 2> errors.txt > output.txt
+   59  less errors.txt 
+   60  cat output.txt 
+   61  ls > output.txt 
+   62  cat output.txt 
+   63  who
+   64  who >> output.txt 
+   65  cat output.txt 
+   66  grep root /etc/* &> /dev/null
+   67  ps aux
+   68  ps aux | wc -l
+   69  ps aux | grep ssh
+   70  ps aux | sort -n -k 2
+   71  ps aux | sort -n -k 2 | awk '{ print $2 }'
+   72  ps aux | sort -n -k 2 | awk '{ print $2 }' | tail -1
+   73  ps aux | awk '/sshd/ { print $2 }'
+   74  ps aux | awk '/sshd/ { print $2 }' | head -1
+   75  kill -9 $(ps aux | awk '/sshd/ { print $2 }' | head -1)
+   76  sudo kill -9 $(ps aux | awk '/sshd/ { print $2 }' | head -1)
+   77  history
+   78  LS
+   79  ls
+   80  sort --help | less
+   81  sort -big
+   82  ls -lrt
+   83  history
+   84  vim startssh
+   85  man who
+   86  history | grep useradd
+   87  sudo find / -user bob
+   88  history
+   89  man useradd
+   90  man man
+   91  man useradd
+   92  man -k password
+   93  man man
+   94  man apropos
+   95  man mandb
+   96  sudo mandb
+   97  man -k password
+   98  man -k password | grep 1
+   99  history
+  100  man -k hostname
+  101  hostnamectl --help
+  102  hostnamectl hostname whatever
+  103  exit
+  104  man hostnamectl
+  105  man lvcreate
+  106  history
+  107  sudo rpm -qf /usr/bin/man
+  108  sudo dnf install man-db
+  109  ssh student@192.168.29.141
+  110  sudo dnf provides nmap
+  111  sudo dnf install nmap
+  112  sudo rpm -ql nmap
+  113  ls
+  114  ls -a
+  115  ls -lrt
+  116  cd /etc
+  117  ls a*
+  118  ls -d a*
+  119  ls a?s*
+  120  ls a*s*
+  121  ls -d a*s*
+  122  ls -d [ab]*
+  123  ls -d [a-e]*
+  124  ls /
+  125  echo $PATH
+  126  ls /proc
+  127  cd
+  128  mkdir files
+  129  ls
+  130  cd files/
+  131  mkdir 2024 2025 2026
+  132  ls
+  133  cd
+  134  sudo dnf install -y git
+  135  history > /tmp/feb26.txt
