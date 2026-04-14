@@ -1,0 +1,167 @@
+    1  cat /etc/os-release 
+    2  sudo apt install -y vim
+    3  sudo dnf install -y vim
+    4  vim countdown
+    5  countdown
+    6  ./countdown
+    7  ls -l countdown
+    8  chmod +x countdown 
+    9  ./countdown 12
+   10  uname -a
+   11  cat /etc/os-release 
+   12  history
+   13  nano countdown 
+   14  vim countdown 
+   15  countdown
+   16  echo $PATH
+   17  ./countdown
+   18  ls -l countdown 
+   19  chmod -x countdown 
+   20  ./countdown
+   21  chmod +x countdown 
+   22  ./countdown
+   23  history
+   24  ./countdown 1
+   25  sudo chvt 3
+   26  w
+   27  free -m
+   28  sudo systemctl isolate multi-user.target
+   29  free -m
+   30  sudo systemctl start graphical.target
+   31  history
+   32  ls -l /root
+   33  sudo ls -l /root
+   34  id
+   35  sudo visudo
+   36  ip a
+   37  ssh 192.168.29.141
+   38  ss -tunap
+   39  history
+   40  ./countdown 1
+   41  man ss
+   42  ss --help
+   43  ss --help | less
+   44  ssh student@192.168.29.141
+   45  countdown
+   46  echo $PATH
+   47  cp countdown /usr/local/bin
+   48  sudo cp countdown /usr/local/bin
+   49  countdown 12
+   50  ls > ~/myfile
+   51  cat myfile 
+   52  who > ~/myfile 
+   53  cat myfile 
+   54  ls >> ~/myfile 
+   55  cat myfile 
+   56  grep -R root /proc
+   57  grep -R root /proc 2> /dev/null
+   58  grep -R root /proc &> /dev/null
+   59  ps aux
+   60  ps aux | grep cron
+   61  sudo kill 1167
+   62  ps aux | grep cron
+   63  ls --help | less
+   64  ls -lrt
+   65  ls --help | less
+   66  man ls
+   67  sudo find / -name "hosts"
+   68  sudo find / -name "*hosts*"
+   69  ps aux | grep cron
+   70  man -k password
+   71  man -k password | wc -l
+   72  man -k password | grep 1
+   73  man passwd
+   74  man man
+   75  man apropos
+   76  mandb
+   77  man mandb
+   78  sudo mandb
+   79  countdown 5
+   80  man -k hostname
+   81  man hostnamectl
+   82  hostnamectl hostname linfun2.example.com
+   83  hostnamectl status
+   84  sudo nano /etc/hosts
+   85  sudo dnf install -y nmap
+   86  man lvcreate
+   87  ssh student@192.168.29.141
+   88  sudo dnf provides */nmap
+   89  countdown 12
+   90  history
+   91  history -d 76
+   92  history
+   93  pwd
+   94  ls
+   95  ls -a
+   96  ls -al
+   97  cd
+   98  cd /home
+   99  ls
+  100  ls -l student
+  101  cd /etc
+  102  ls -l a*
+  103  ls -ld a*
+  104  ls -ld a????*
+  105  cd
+  106  touch hellostudent
+  107  ls -l hellostudent 
+  108  ls -ld a?[a-e]*
+  109  pwd
+  110  whoami
+  111  ls -ld .
+  112  mkdir one
+  113  ls
+  114  rmdir one
+  115  mkdir one
+  116  touch one/two
+  117  ls one
+  118  rmdir one
+  119  rm -r one/
+  120  ls
+  121  cd /
+  122  ls
+  123  ls /usr
+  124  du -hs /usr
+  125  ls var
+  126  ls -l log
+  127  ls -l /var/log
+  128  less /var/log/messages 
+  129  sudo less /var/log/messages 
+  130  cd /etc
+  131  ls
+  132  tail passwd
+  133  sudo tail shadow
+  134  ls -l shadow
+  135  sudo tail shadow
+  136  ls -ld /tmp
+  137  man hier
+  138  touch hhhh
+  139  cd /var
+  140  ls
+  141  cd empty/
+  142  ls
+  143  ls ..
+  144  ls ../log
+  145  ls -l ../log/messages 
+  146  ls -l /var/log/messages 
+  147  cd
+  148  sudo cp -R /tmp .
+  149  ls
+  150  ls tmp/
+  151  ls -l
+  152  rm -rf tmp
+  153  sudo rm -rf tmp
+  154  sudo cp -R /tmp/ .
+  155  ls
+  156  sudo cp -R /tmp/ .
+  157  sudo cp -R /tmp/* .
+  158  ls
+  159  sudo rm -rf systemd*
+  160  ls
+  161  ls -l
+  162  rm -rf vmware-root_965-4256676100/ tmp/
+  163  sudo rm -rf vmware-root_965-4256676100/ tmp/
+  164  ls -l
+  165  mv myfile yourfile
+  166  ls -l
+  167  history > /tmp/april26
