@@ -165,3 +165,241 @@
   165  mv myfile yourfile
   166  ls -l
   167  history > /tmp/april26
+  168  ip a
+  169  ps aux | grep ssh
+  170  git clone https://github.com/sandervanvugt/linfun
+  171  sudo dnf install git-core
+  172  git clone https://github.com/sandervanvugt/linfun
+  173  cd linfun/
+  174  ls
+  175  cd /
+  176  ls -l
+  177  cd
+  178  cp /etc/hosts .
+  179  ls -il hosts
+  180  cp hosts chosts
+  181  ls -il *hosts
+  182  ln hosts hlhosts
+  183  ls -il *hosts
+  184  echo hello >> hlhosts 
+  185  ls -il *hosts
+  186  ln -s hosts slhosts
+  187  ls -il *hosts
+  188  cp slhosts /tmp
+  189  ls -il /tmp/slhosts 
+  190  rm hosts
+  191  ls -il /tmp/slhosts 
+  192  ls -il *hosts
+  193  cat slhosts 
+  194  history
+  195  touch /tmp/testfile
+  196  ln /tmp/testfile linkedfile
+  197  ln -s linkedfile symlink
+  198  rm linkedfile 
+  199  ls -l symlink 
+  200  cp /etc/hosts linkedfile
+  201  ls -l symlink 
+  202  sudo useradd lisa
+  203  sudo find / -user lisa
+  204  sudo find / -user lisa -type f
+  205  sudo find / -user lisa -type f 2>/dev/null
+  206  sudo find / -size +500M
+  207  sudo find / -user lisa -exec cp {} /root/lisa/ \;
+  208  who; ls
+  209  sudo mkdir /root/lisa && sudo find / -user lisa -exec cp {} /root/lisa/ \;
+  210  history
+  211  sudo tar -cvf etc.tar /etc
+  212  sudo tar -czvf etc.tar.gz /etc
+  213  ls -l etc*
+  214  sudo tar -cjvf etc.tar.bz2 /etc
+  215  ls -l etc*
+  216  sudo tar -cJvf etc.tar.xz /etc
+  217  ls -l etc*
+  218  tar -tvf etc.tar.xz 
+  219  tar -xvf etc.tar
+  220  ls
+  221  history
+  222  mkdir -p /tmp/files/{pictures,videos,photos}
+  223  tree /tmp/files
+  224  cp /etc/[a-c]* /tmp/files
+  225  cd /tmp/files/
+  226  ls
+  227  mv [ab]* photos/
+  228  ls
+  229  mv c* videos/
+  230  man find
+  231  find /etc -size -1000c
+  232  find /etc -size -1000c -exec cp {} /tmp/files/pictures/ 
+  233  find /etc -size -1000c -exec cp {} /tmp/files/pictures/ \;
+  234  ls -l /tmp/files/pictures/
+  235  ln -s /var .
+  236  ls
+  237  ls -l
+  238  tar -czvf home.tgz /home
+  239  ls -l /home
+  240  ls
+  241  ls -l
+  242  mkdir ../archive
+  243  cd ../archive/
+  244  tar -xvf ../files/home.tgz .
+  245  tar -xvf ../files/home.tgz 
+  246  ls
+  247  history
+  248  cd
+  249  nano myfile
+  250  vimtutor 
+  251  vim minimal
+  252  histry
+  253  history
+  254  vim minimal
+  255  more /etc/passwd
+  256  less /etc/passwd
+  257  most /etc/passwd
+  258  head -5 /etc/passwd
+  259  head -5 /etc/passwd | tail -2
+  260  cat /etc/motd
+  261  cat /etc/os-release 
+  262  tac /etc/os-release 
+  263  countdown 12
+  264  ps aux | grep CRON
+  265  ps aux | grep audit
+  266  ps aux | grep -i audit
+  267  cd linfun/
+  268  ls
+  269  cat regex 
+  270  grep lea *
+  271  grep -l lea *
+  272  grep -lv lea *
+  273  vim onlylea
+  274  grep -lv lea *
+  275  grep -lv lea * | grep only
+  276  grep -l lea * | grep only
+  277  vim /etc/ssh/sshd_config
+  278  sudo vim /etc/ssh/sshd_config
+  279  grep -i -A 10 'authentication' /etc/ssh/sshd_config
+  280  sudo grep -i -A 10 'authentication' /etc/ssh/sshd_config
+  281  sudo grep -i -A 10 '^# authentication' /etc/ssh/sshd_config
+  282  cd /etc
+  283  grep -l 'root' *
+  284  grep -l 'root' * 2>/dev/null
+  285  grep -lR 'root' * 2>/dev/null
+  286  history
+  287  cd
+  288  history | grep git
+  289  cd linfun/
+  290  ls
+  291  less regex 
+  292  grep '^l' regex 
+  293  grep 'l' regex 
+  294  grep 'anna$' regex 
+  295  grep '4$' regex 
+  296  grep '^$' regex 
+  297  grep '^.$' regex 
+  298  grep '.' regex 
+  299  grep 'lea' regex 
+  300  grep 'lea\b' regex 
+  301  grep 'n.*x' regex 
+  302  grep '..*[[:space:]]..*' regex 
+  303  grep 'bi+t' regex 
+  304  grep -E 'bi+t' regex 
+  305  grep -E 'bi?t' regex 
+  306  grep -E 'bon\{3\}nen' regex 
+  307  grep 'bon\{3\}nen' regex 
+  308  grep '\banna\b' regex 
+  309  grep -E 'anna' -E 'lea' regex 
+  310  grep -E '(anna|lea)' regex 
+  311  history
+  312  cat /etc/passwd
+  313  cut -d : -f 1 /etc/passwd
+  314  cut -d : -f 1 /etc/passwd | sort
+  315  cut -d : -f 3 /etc/passwd | sort
+  316  cut -d : -f 1 /etc/passwd | sort | tr [:lower:] [:upper:]
+  317  cut -d : -f 1 /etc/passwd | sort | tr [a-z] [A-Z]
+  318  cut -d : -f 1 /etc/passwd | sort | tr [a-k] [l-z]
+  319  cut -d : -f 1 /etc/passwd | sort | tr [a-z] [z-a]
+  320  awk 'length($1) > 6' /etc/passwd
+  321  awk -F : 'length($1) > 6' /etc/passwd
+  322  awk -F : '{ print $4 }' /etc/passwd
+  323  awk -F : '/lisa/ { print $4}'  /etc/passwd
+  324  sort -t: -k3,3n /etc/passwd
+  325  history
+  326  sed -n 5p /etc/passwd
+  327  sed -i s/lea/leah/g regex
+  328  grep leah regex
+  329  sed -n 2p /etc/passwd
+  330  sed -n 2p regex
+  331  sed -i -e '2d' regex
+  332  sed -n 2p regex
+  333  sed -i '/anna/s/^/#/' regex 
+  334  grep anna regex
+  335  less regex 
+  336  sed -i '/leah/s/^/#/' regex 
+  337  less regex 
+  338  man semanage-fcontext
+  339  # semanage fcontext -a -t httpd_sys_content_t "/web(/.*)?"
+  340  head -5  /etc/passwd | tail -1
+  341  sed -n 5p /etc/passwd
+  342  ps aux | awk '{ print $1 }'
+  343  grep -l '^root' /etc/*
+  344  grep -l '^root' /etc/* 2>/dev/null
+  345  grep -l '^...$' /etc/* 2>/dev/null
+  346  echo alex >> regex
+  347  echo alexander >> regex
+  348  grep 'alex' regex
+  349  grep 'alex\b' regex
+  350  cd
+  351  ls -a
+  352  history -w
+  353  w
+  354  sudo chvt 2
+  355  countdown 15
+  356  history
+  357  ps aux | less
+  358  top
+  359  ls
+  360  sudo reboot
+  361  history
+  362  ls -l
+  363  id
+  364  sudo useradd linda
+  365  id linda
+  366  sudo usermod -aG wheel linda
+  367  sudo groupadd sales
+  368  sudo usermod -G sales linda
+  369  id linda
+  370  sudo usermod -aG wheel linda
+  371  id linda
+  372  sudo passwd linda
+  373  id linda
+  374  id anna
+  375  sudo useradd anna
+  376  grep sales /etc/group
+  377  usermod -aG sales anna
+  378  sudo usermod -aG sales anna
+  379  sudo mkdir /data/sales
+  380  sudo mkdir -p /data/sales
+  381  ls -l /data && sudo chgrp sales /data/sales
+  382  ls -l /data
+  383  sudo chmod 770 /data/sales
+  384  ls -l /data
+  385  sudo su - linda
+  386  sudo touch /home/linda/rootfile
+  387  sudo su - linda
+  388  sudo systemctl status NetworkManager
+  389  sudo nmtui
+  390  ip a
+  391  ip route show
+  392  cat /etc/resolv.conf 
+  393  ping nu.nl
+  394  lsblk
+  395  cd /run/media/student/Ubuntu\ 24.04.3\ LTS\ amd64/
+  396  ls
+  397  cd
+  398  sudo mount /dev/sda1 /mnt
+  399  ls /mnt
+  400  sudo umount /dev/sda1
+  401  sudo journalctl
+  402  cd linfun/
+  403  ls
+  404  less RESOURCES.txt 
+  405  history > /tmp/april26
