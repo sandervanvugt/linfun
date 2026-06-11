@@ -1,0 +1,109 @@
+    1  exit
+    2  ls
+    3  nano countdown
+    4  ls -l
+    5  countdown
+    6  echo $PATH
+    7  pwd
+    8  ./countdown
+    9  chmod +x countdown 
+   10  ./countdown
+   11  ./countdown 13
+   12  ls -l /root
+   13  ls -ld /root
+   14  sudo ls -l /root
+   15  whoami
+   16  id
+   17  top
+   18  sudo top
+   19  ssh anna@192.168.29.137
+   20  ip a
+   21  ps aux | grep ssh
+   22  ssh 192.168.29.143
+   23  sudo systemctl stop sshd
+   24  sudo systemctl start sshd
+   25  history
+   26  ssh 192.168.29.143
+   27  ssh anna@192.168.29.137
+   28  ssh anna@muela2
+   29  sudo vim /etc/hosts
+   30  ssh anna@muela2
+   31  ps aux | grep ssh
+   32  sudo systemctl status sshd.service
+   33  sudo systemctl start sshd.service
+   34  ssh anna@muela2
+   35  echo $SHELL
+   36  sudo chvt 3
+   37  history
+   38  history > /tmp/june26
+   39  cat /tmp/june26
+   40  who > /tmp/june26 
+   41  cat /tmp/june26 
+   42  history > /tmp/june26
+   43  who >> /tmp/june26 
+   44  less /tmp/june26 
+   45  ls gjguguyfguygf
+   46  ls gjguguyfguygf 2>/dev/null
+   47  ls gjguguyfguygf countdown 2>/dev/null
+   48  ls gjguguyfguygf countdown &>/dev/null
+   49  history
+   50  ls countdown 
+   51  ls countdown >/dev/null
+   52  ls countdown ghiugiuguigu
+   53  ls countdown ghiugiuguigu 2>/dev/null
+   54  ls countdown ghiugiuguigu &>/dev/null
+   55  who
+   56  w
+   57  ps aux
+   58  ps aux | grep podman
+   59  ps aux | grep ssh
+   60  ps aux | wc -l
+   61  wc --help
+   62  ls --help
+   63  ls --help | less
+   64  cd /bin
+   65  ls
+   66  man hunspell
+   67  find  / -name "hosts"
+   68  find  / -name "hosts" 2>/dev/null
+   69  history
+   70  cat /etc/os-release 
+   71  sudo systemctl status ssh.service
+   72  sudo apt install openssh-server
+   73  man man
+   74  man -k user
+   75  man man
+   76  man apropos
+   77  man mandb
+   78  mandb
+   79  sudo mandb
+   80  man man
+   81  man mandb
+   82  man -k user
+   83  man -k user | wc -l
+   84  man -k user
+   85  man -k user | grep 8
+   86  ssh anna@muela2
+   87  man woman
+   88  cd
+   89  ./countdown 12
+   90  man -k user | grep 8
+   91  man semanage-fcontext
+   92  man -k host
+   93  man -k host | grep name
+   94  man -k host | grep name | grep 1
+   95  an hostnamectl
+   96  man hostnamectl
+   97  hostnamectl --help
+   98  hostnamectl hostname linfun.example.com
+   99  echo $?
+  100  ls kjgiugiugi
+  101  echo $?
+  102  hostnamectl status
+  103  exit
+  104  man lvcreate
+  105  lvcreate --help | less
+  106  nmap
+  107  sudo dnf install nmap
+  108  ip a
+  109  history > /tmp/june26
