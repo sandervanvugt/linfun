@@ -1,3 +1,17 @@
+    1  dd if=/dev/zero of=/dev/null
+    2  bg
+    3  dd if=/dev/zero of=/dev/null &
+    4  man dd
+    5  top
+    6  lscpu | less
+    7  echo 0 > /sys/bus/cpu/devices/cpu1/online 
+    8  lscpu | less
+    9  dd
+   10  top
+   11  killall dd
+   12  dd if=/dev/zero of=/dev/null &
+   13  top
+   14  history > /tmp/june26
     1  exit
     2  ls
     3  nano countdown
@@ -107,3 +121,291 @@
   107  sudo dnf install nmap
   108  ip a
   109  history > /tmp/june26
+  110  pwd
+  111  ls
+  112  ls /etc
+  113  ls
+  114  ls -a
+  115  ls -l
+  116  ls -l .
+  117  ls -ld .
+  118  ls -lrt /etc
+  119  sudo useradd gilbert
+  120  ls -lrt /etc
+  121  ls --help | less
+  122  ls /etc/
+  123  ls /etc/hosts
+  124  ls /etc/*hosts*
+  125  ls -R /etc/*hosts*
+  126  ls -R /etc/*host*
+  127  ls -R /etc/*h?st*
+  128  ls /etc/[a-c]*
+  129  ls -d /etc/[a-c]*
+  130  cd /
+  131  ls
+  132  ls -l
+  133  cd /usr
+  134  ls
+  135  cd
+  136  pwd
+  137  ls -l /home
+  138  cd /home
+  139  ls
+  140  cd gilbert/
+  141  ls -l
+  142  whoami
+  143  cd /tmp
+  144  ls
+  145  mkdir friday
+  146  ls
+  147  cp june26 friday/
+  148  rmdir friday
+  149  rm -rf friday/
+  150  man hier
+  151  cd /var/log
+  152  ls
+  153  ls -l
+  154  sudo tail messages 
+  155  touch hello
+  156  ls -l messages 
+  157  ls -l /var/log/messages 
+  158  cd ..
+  159  ls
+  160  cd kerberos/
+  161  ls ../log/messages 
+  162  cd
+  163  countdown 12
+  164  echo $PATH
+  165  cp countdown /usr/local/bin
+  166  ls -l /usr/local/bin
+  167  ls -ld /usr/local/bin
+  168  sudo cp countdown /usr/local/bin
+  169  countdown 
+  170  touch hello
+  171  mv hello /tmp
+  172  ls
+  173  ls -l /tmp/hello 
+  174  mv /tmp/hello /tmp/bonjour
+  175  ls -l /tmp/bonjour 
+  176  cp -R /etc/ . 2>/dev/null
+  177  ls
+  178  ls etc/
+  179  history
+  180  mkdir /tmp/trash
+  181  cp -aR . /tmp/trash/
+  182  ls /tmp/trash/
+  183  tree /tmp/trash
+  184  sudo cp -R /tmp .
+  185  ls
+  186  history
+  187  cp /etc/hosts .
+  188  ls -il /etc/hosts hosts
+  189  ln hosts ghosts
+  190  ls -il *osts
+  191  echo hello >> ghosts
+  192  ls -il *osts
+  193  ln -s hosts shosts
+  194  ls -il *osts
+  195  rm hosts
+  196  ls -il *osts
+  197  cat shosts
+  198  cp /etc/passwd hosts
+  199  ls -il *osts
+  200  cat shost
+  201  cat shosts
+  202  history
+  203  lsblk
+  204  ls /boot
+  205  sudo ln /boot/vmlinuz-6.12.0-35.el10.aarch64 kernel
+  206  sudo ln -s /boot/vmlinuz-6.12.0-35.el10.aarch64 kernel
+  207  touch /tmp/testfile
+  208  ln /tmp/testfile ~/linkedfile
+  209  ln -s linkedfile symlink
+  210  ls -il /tmp/testfile ~/*link*
+  211  rm linkedfile 
+  212  ls -il /tmp/testfile ~/*link*
+  213  touch linkedfile
+  214  echo hello >> linkedfile 
+  215  ls -il /tmp/testfile ~/*link*
+  216  mv symlink /tmp/
+  217  ls -l /tmp/sym*
+  218  rm /tmp/symlink 
+  219  ls
+  220  ln -s /home/student/linkedfile symlink
+  221  ls -il symlink 
+  222  cp symlink /tmp
+  223  ls -l /tmp/sym*
+  224  rm -f /tmp/symlink 
+  225  mv symlink /tmp
+  226  ls -l /tmp/sy*
+  227  ls -l /tmp/sym*
+  228  ls --help | grep link
+  229  cp --help | grep link
+  230  ln -s linkedfile testone
+  231  ln -s /home/student/linkedfile testone
+  232  rm testone
+  233  ln -s /home/student/linkedfile testone
+  234  cp -d testone /tmp
+  235  ls -l /tmp/testone 
+  236  countdown 12
+  237  history
+  238  find / -name "hosts"
+  239  find / -name "hosts" 2>/dev/null
+  240  find / -name "*hosts*" 2>/dev/null
+  241  sudo find / -user gilbert 2>/dev/null
+  242  sudo find / -user gilbert -type f 2>/dev/null
+  243  df -h
+  244  sudo find / -size +200M 2>/dev/null
+  245  sudo mkdir /root/gilbert; sudo find / -user "gilbert" -exec cp {} /root/gilbert/ \;
+  246  ls
+  247  locate ghosts
+  248  locate ghosts | grep -v ghostscript
+  249  sudo update 
+  250  sudo updatedb
+  251  locate ghosts | grep -v ghostscript
+  252  sudo tar -cvf etc.tar /etc
+  253  ls -l etc*
+  254  ls -ld etc*
+  255  sudo tar -czvf etc.tar.gz /etc
+  256  ls -ld etc*
+  257  sudo tar -cjvf etc.tar.bz2 /etc
+  258  ls -ld etc*
+  259  sudo tar -cJvf etc.tar.xz /etc
+  260  ls -ld etc*
+  261  tar -tvf etc.tar
+  262  mkdir somewhereelse
+  263  tar -xvf etc.tar -C somewhereelse/
+  264  ls somewhereelse/
+  265  history
+  266  mkdir -p /tmp/files/{pictures,photos,videos}
+  267  ls -l /tmp/files
+  268  cd /tmp/files
+  269  ls
+  270  cp /etc/[a-c]* .
+  271  ls
+  272  mv [ab]* photos/
+  273  ls
+  274  mc c* videos/
+  275  mv c* videos/
+  276  sudo dnf install -y mv
+  277  sudo dnf install -y mc
+  278  mc
+  279  man find
+  280  sudo find /etc -size -1000c -type f
+  281  sudo find /etc -size -1000c -type f -exec cp {} pictures/ \;
+  282  ls -l pictures/
+  283  ln -s /var .
+  284  ls
+  285  ls -l
+  286  tar -cjvf home /home
+  287  sudo tar -cjvf home /home
+  288  ls -l
+  289  file home
+  290  mkdir ../archive
+  291  tar -xvf home -C ../archive
+  292  ls ../archive/
+  293  history
+  294  cd
+  295  nano myfile
+  296  vim myfile 
+  297  vimtutor
+  298  history
+  299  less /etc/passwd
+  300  cat /etc/passwd
+  301  cat /etc/passwd | less
+  302  more /etc/passwd
+  303  sudo tail /var/log/messages 
+  304  sudo tail -2 /var/log/messages 
+  305  sudo head -2 /var/log/messages 
+  306  cat /etc/hosts
+  307  tac /etc/hosts
+  308  cd /etc
+  309  sudo grep student *
+  310  sudo grep student * 2>/dev/null
+  311  sudo grep -l student * 2>/dev/null
+  312  ps faux
+  313  ps faux | grep faux
+  314  ps faux | grep -B5 faux
+  315  ps faux | grep -B5 faux | grep -v grep
+  316  echo *
+  317  echo '*'
+  318  grep 'a*' a*
+  319  man 7 regex
+  320  cd
+  321  ls
+  322  sudo dnf install -y git
+  323  sudo vim /etc/hosts
+  324  git clone https://github.com/sandervanvugt/linfun
+  325  cd linfun/
+  326  ls
+  327  ln regex myfile
+  328  grep '^l' myfile 
+  329  grep 'anna$' myfile 
+  330  grep '^anna' myfile 
+  331  grep '^anna$' myfile 
+  332  grep '.' myfile 
+  333  grep '^lea\b' myfile 
+  334  grep '^lea' myfile 
+  335  grep 'n.*x' myfile 
+  336  echo nothing is as great as the fantastic linux os >> myfile 
+  337  grep 'n.*x' myfile 
+  338  grep '..*[[:space:]]..*' myfile 
+  339  grep 'bi+t' myfile 
+  340  grep -E 'bi+t' myfile 
+  341  grep -E 'bi?t' myfile 
+  342  grep 'bon\{3\}nen' myfile 
+  343  grep '\banna\b' myfile 
+  344  grep -E '{lea|anna}' myfile 
+  345  grep -E '(lea|anna)' myfile 
+  346  history
+  347  awk -F : '/student/ { print $4 }' /etc/passwd
+  348  awk -F : '{ print $4 }' /etc/passwd
+  349  less /etc/passwd
+  350  sort -t: -k3,3n /etc/passwd
+  351  head regex 
+  352  sed -i -e '2d' regex 
+  353  head regex 
+  354  sed -i s/lea/leah/g regex 
+  355  grep lea regex 
+  356  grep anna regex 
+  357  sed -i '/leah/s/^/#/' regex 
+  358  grep lea regex 
+  359  grep leah regex | wc -w
+  360  grep '\bleah\b' regex 
+  361  grep -c '\bleah\b' regex 
+  362  countdown 12
+  363  ls
+  364  cat RESOURCES.txt 
+  365  history
+  366  cd
+  367  ls -a
+  368  exit
+  369  countdown 11
+  370  ls
+  371  ./countdown 14
+  372  history
+  373  less /etc/passwd
+  374  history | grep '-exec'
+  375  sudo mkdir /root/gilbert; sudo find / -user "gilbert" -exec cp {} /root/gilbert/ \;
+  376  sudo sh -c "echo password | passwd --stdin gilbert"
+  377  history
+  378  history -d 369
+  379  history
+  380  history -w
+  381  echo $HISTSIZE
+  382  grep -R 'HISTFILESIZE' /etc/*
+  383  grep -R 'HISTFILESIZE' /etc/* 2>/dev/null
+  384  sudo grep -R 'HISTFILESIZE' /etc/* 2>/dev/null
+  385  sudo grep -R 'HISTSIZE' /etc/* 2>/dev/null
+  386  sudo vim /etc/profile
+  387  vim /etc/profile.d/history.hs
+  388  cd /etc/profile.d/
+  389  ls
+  390  vim history.sh
+  391  cd
+  392  history
+  393  echo password
+  394  sudo -i
+  395  ls -l /tmp/june26 
+  396  sudo killall dd
+  397  history >> /tmp/june26
